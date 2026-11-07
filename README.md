@@ -1,4 +1,3 @@
-{align="center"}
 # trusTmart
 
 ### Trust the product. Trace its journey.
