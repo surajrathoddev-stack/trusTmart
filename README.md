@@ -8,21 +8,10 @@
 Verify what you buy. Understand where it came from. Follow the evidence
 behind every product.
 
-`<br/>`{=html}
 
 [![Repository](https://img.shields.io/badge/GitHub-trusTmart-181717?style=for-the-badge&logo=github)](https://github.com/surajrathoddev-stack/trusTmart)
 [![Status](https://img.shields.io/badge/Status-In_Development-orange?style=for-the-badge)](#project-status)
 [![Contributions](https://img.shields.io/badge/Contributions-Welcome-2ea44f?style=for-the-badge)](#contributing)
-
-`<br/>`{=html}
-
-`<a href="https://github.com/surajrathoddev-stack/trusTmart">`{=html}
-`<img src="https://img.shields.io/github/last-commit/surajrathoddev-stack/trusTmart?style=flat-square&logo=git&label=last%20updated" alt="Last commit"/>`{=html}
-`<img src="https://img.shields.io/github/commit-activity/m/surajrathoddev-stack/trusTmart?style=flat-square&logo=github" alt="Monthly commit activity"/>`{=html}
-`<img src="https://img.shields.io/github/repo-size/surajrathoddev-stack/trusTmart?style=flat-square&logo=github&label=repository%20size" alt="Repository size"/>`{=html}
-`</a>`{=html}
-
-`<br/>`{=html}`<br/>`{=html}
 
 **A product should have a story. Its evidence should be traceable.**
 :::
