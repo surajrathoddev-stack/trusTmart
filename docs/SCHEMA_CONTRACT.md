@@ -1,108 +1,86 @@
-**# trusTmart Schema Contract (PostgreSQL)**
+# trusTmart Schema Contract (PostgreSQL)
 
+Source of truth: `database/migrations/*.sql`. Apply with `bash database/scripts/migrate.sh`.
 
+## roles
 
-**Source of truth: `database/migrations/\*.sql`. Apply with `bash database/scripts/migrate.sh`.**
+- role_id (PK), role_name (unique): ADMIN, MANUFACTURER, SUPPLIER, RETAILER, CONSUMER
 
+## users
 
+- user_id (PK), email (unique), password_hash, full_name
 
-**## roles**
+- role_id (FK roles), wallet_address, is_active, created_at
 
-**- role\_id (PK), role\_name (unique): ADMIN, MANUFACTURER, SUPPLIER, RETAILER, CONSUMER**
+## sellers
 
+- seller_id (PK), legal_name, website, registration_ref, region, created_at
 
+## seller_evidence
 
-**## users**
+- evidence_id (PK), seller_id (FK sellers)
 
-**- user\_id (PK), email (unique), password\_hash, full\_name**
+- evidence_status: VERIFIED | UNKNOWN | HIGH_RISK
 
-**- role\_id (FK roles), wallet\_address, is\_active, created\_at**
+- source_url, notes, checked_at
 
+## product_master (one row per product type)
 
+- product_id (PK), gtin (TEXT, nullable, unique when present)
 
-**## sellers**
+- product_name, brand, domain, description
 
-**- seller\_id (PK), legal\_name, website, registration\_ref, region, created\_at**
+- model_part_number (separate from GTIN), regulatory_id (e.g. NDC, never a GTIN)
 
+- source_name, source_url, source_record_id, collected_at, created_at
 
+- domain values: ELECTRONICS, APPAREL_FASHION, COSMETICS_PERSONAL_CARE,
 
-**## seller\_evidence**
+&#x20; **AUTOMOTIVE_INDUSTRIAL, PHARMACEUTICALS, FMCG_FOOD_BEVERAGE
 
-**- evidence\_id (PK), seller\_id (FK sellers)**
+- Rule: source_url or source_record_id is required.
 
-**- evidence\_status: VERIFIED | UNKNOWN | HIGH\_RISK**
+## product_unit (one row per physical item)
 
-**- source\_url, notes, checked\_at**
+- unit_id (UUID, PK), product_id (FK product_master)
 
+- serial_number, batch_number, manufacturer_user_id (FK users)
 
+- data_hash, current_status, current_location, is_sold, created_at
 
-**## product\_master (one row per product type)**
+- unique (product_id, serial_number)
 
-**- product\_id (PK), gtin (TEXT, nullable, unique when present)**
+- Rule: GTIN is never used as the unit ID.
 
-**- product\_name, brand, domain, description**
+## supply_chain_events
 
-**- model\_part\_number (separate from GTIN), regulatory\_id (e.g. NDC, never a GTIN)**
+- event_id (PK), unit_id (FK product_unit)
 
-**- source\_name, source\_url, source\_record\_id, collected\_at, created\_at**
+- event_type: REGISTERED | TRANSFERRED | RECEIVED | LOCATION_UPDATE | SOLD
 
-**- domain values: ELECTRONICS, APPAREL\_FASHION, COSMETICS\_PERSONAL\_CARE,**
+- actor_user_id (FK users), seller_id (FK sellers), location, note, created_at
 
-&#x20; **AUTOMOTIVE\_INDUSTRIAL, PHARMACEUTICALS, FMCG\_FOOD\_BEVERAGE**
+## chain_transactions
 
-**- Rule: source\_url or source\_record\_id is required.**
+- tx_id (PK), event_id (FK supply_chain_events)
 
+- tx_hash (unique), network (default sepolia), block_number
 
+- tx_status: PENDING | CONFIRMED | FAILED, created_at
 
-**## product\_unit (one row per physical item)**
+## scan_logs
 
-**- unit\_id (UUID, PK), product\_id (FK product\_master)**
+- scan_id (PK), unit_id (FK product_unit), scanned_by_user_id (FK users)
 
-**- serial\_number, batch\_number, manufacturer\_user\_id (FK users)**
+- result: AUTHENTIC | SUSPICIOUS | UNVERIFIED
 
-**- data\_hash, current\_status, current\_location, is\_sold, created\_at**
+- reason, scan_location, scanned_at
 
-**- unique (product\_id, serial\_number)**
+## Conventions
 
-**- Rule: GTIN is never used as the unit ID.**
+- GTIN/barcodes are TEXT so leading zeros are kept.
 
+- Timestamps are TIMESTAMPTZ.
 
-
-**## supply\_chain\_events**
-
-**- event\_id (PK), unit\_id (FK product\_unit)**
-
-**- event\_type: REGISTERED | TRANSFERRED | RECEIVED | LOCATION\_UPDATE | SOLD**
-
-**- actor\_user\_id (FK users), seller\_id (FK sellers), location, note, created\_at**
-
-
-
-**## chain\_transactions**
-
-**- tx\_id (PK), event\_id (FK supply\_chain\_events)**
-
-**- tx\_hash (unique), network (default sepolia), block\_number**
-
-**- tx\_status: PENDING | CONFIRMED | FAILED, created\_at**
-
-
-
-**## scan\_logs**
-
-**- scan\_id (PK), unit\_id (FK product\_unit), scanned\_by\_user\_id (FK users)**
-
-**- result: AUTHENTIC | SUSPICIOUS | UNVERIFIED**
-
-**- reason, scan\_location, scanned\_at**
-
-
-
-**## Conventions**
-
-**- GTIN/barcodes are TEXT so leading zeros are kept.**
-
-**- Timestamps are TIMESTAMPTZ.**
-
-**- Dataset files use the product\_master field names above.**
+- Dataset files use the product_master field names above.
 
