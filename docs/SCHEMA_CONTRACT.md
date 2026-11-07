@@ -36,7 +36,7 @@ Source of truth: `database/migrations/*.sql`. Apply with `bash database/scripts/
 
 - domain values: ELECTRONICS, APPAREL_FASHION, COSMETICS_PERSONAL_CARE,
 
-&#x20; **AUTOMOTIVE_INDUSTRIAL, PHARMACEUTICALS, FMCG_FOOD_BEVERAGE
+  **AUTOMOTIVE_INDUSTRIAL, PHARMACEUTICALS, FMCG_FOOD_BEVERAGE
 
 - Rule: source_url or source_record_id is required.
 

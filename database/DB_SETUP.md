@@ -1,46 +1,40 @@
-\# Database Setup (trusTmart)
+# Database Setup (trusTmart)
 
+## Requirements
 
+- PostgreSQL 18 (or 14+)
 
-\## Requirements
+- Git Bash (Windows) or any bash shell
 
-\- PostgreSQL 18 (or 14+)
+- `psql` available on your PATH
 
-\- Git Bash (Windows) or any bash shell
+## Steps
 
-\- `psql` available on your PATH
+1. Clone the repo and open the `avika-database` branch.
 
+2. Create an empty database named `trustmart` (pgAdmin, or `createdb trustmart`).
 
+3. Copy the example settings file and put your own password in it:
 
-\## Steps
+   `cp database/.env.example database/.env`
 
-1\. Clone the repo and open the `avika-database` branch.
+   Never commit `database/.env`. It is ignored by Git.
 
-2\. Create an empty database named `trustmart` (pgAdmin, or `createdb trustmart`).
+4. Apply all migrations with one command:
 
-3\. Copy the example settings file and put your own password in it:
+   `bash database/scripts/migrate.sh`
 
-&#x20;  `cp database/.env.example database/.env`
+5. Check the tables:
 
-&#x20;  Never commit `database/.env`. It is ignored by Git.
+   `psql -h localhost -U postgres -d trustmart -c "\dt"`
 
-4\. Apply all migrations with one command:
+## Notes
 
-&#x20;  `bash database/scripts/migrate.sh`
+- The script is safe to run again. Migrations already applied are skipped.
 
-5\. Check the tables:
+- Applied migrations are recorded in the `schema_migrations` table.
 
-&#x20;  `psql -h localhost -U postgres -d trustmart -c "\\dt"`
+- GTIN/barcodes are stored as text so leading zeros are kept.
 
-
-
-\## Notes
-
-\- The script is safe to run again. Migrations already applied are skipped.
-
-\- Applied migrations are recorded in the `schema\_migrations` table.
-
-\- GTIN/barcodes are stored as text so leading zeros are kept.
-
-\- A product unit has its own `unit\_id`. The GTIN is never used as a unit ID.
+- A product unit has its own `unit_id`. The GTIN is never used as a unit ID.
 
