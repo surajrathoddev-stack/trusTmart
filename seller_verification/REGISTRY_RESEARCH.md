@@ -10,7 +10,7 @@
 
 **Page used:** View-Companies-Directors-under-prosecution-V3.html (directors listing, not the general company search)
 
-- **Date and time:** (fill in)
+- **Date and time:** 9/11/26 8.30 PM
 - **Search term:** Reliance
 - **CAPTCHA appeared:** Yes
 - **Login required:** No
@@ -24,7 +24,7 @@
 
 **Page used:** https://foscos.fssai.gov.in/
 
-- **Date and time:** 10 November 2026, 9:00 am
+- **Date and time:** 10 November 2026, 9:00 AM
 - **Search term:** Britannia (confirmed)
 - **CAPTCHA appeared:** yes 
 - **Login required:** No (login link visible, not used)
