@@ -311,7 +311,7 @@ smart-contract interfaces.
 -   **Explainability** --- every verification outcome should have
     understandable reasons.
 
-------------------------------------------------------------------------
+---------------------------------------------------------------------
 
 ::: {align="center"}
 ### Built around one simple idea
