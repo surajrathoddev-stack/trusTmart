@@ -38,3 +38,16 @@ Full lists with the reason for each row: database/data/cosmetics_rejected.csv an
 - Open Products Facts has few real automotive items, so Automotive is below target.
 - Electronics, Apparel, Pharmaceuticals and FMCG files had not been received when this was written.
 - Descriptions come from category and quantity fields in the source and are short.
+
+## Licence recheck (11 Nov 2026)
+
+Both sources were rechecked on 11 Nov 2026 on the Open Beauty Facts website and the Open Products Facts dataset description (data.gouv.fr).
+
+| Source | Licence | What we must do |
+|---|---|---|
+| Open Beauty Facts | Open Database License (ODbL) v1.0. Individual contents under the Database Contents License (DbCL) v1.0. | Credit the source. Keep the licence notice. Share-Alike: if we publish an adapted database, we offer it under the ODbL too. |
+| Open Products Facts | Open Database License (ODbL). | Same rules as above. Commercial use is allowed if we name the source and share changes under the same conditions. |
+
+Our use: this is a college project. Cosmetics rows come from Open Beauty Facts and Automotive rows from Open Products Facts. Credit line: "Open Beauty Facts / Open Products Facts contributors (ODbL)".
+
+Rows collected from official brand websites are not from these databases. Their source URLs are kept in the table above and in the raw data files.
