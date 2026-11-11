@@ -8,16 +8,16 @@ Collection date: 2026-11-09. All records come from public sources. No barcode wa
 |---|---|---|---|---|---|
 | Cosmetics and Personal Care | Open Beauty Facts API v2 | https://world.openbeautyfacts.org | barcode (code) | 2026-11-07 | Open Database License (ODbL), contents under Database Contents License. Check the site's terms page before reuse and credit the source. |
 | Automotive and Industrial Parts | Open Products Facts search | https://world.openproductsfacts.org | barcode (code) | 2026-11-09 | Same family and licence as above. Check the terms page before reuse. |
-| Automotive and Industrial Parts | Official manufacturer websites (manual rows) | per-row source_url | model/part number | pending | Facts only (name, part number). Each row keeps its own page link. No rows accepted yet. |
+| Automotive and Industrial Parts | Official manufacturer websites (manual rows) | per-row source_url | model/part number | 2026-11-10 | Facts only (name, part number, printed EAN). Each row keeps its own page link. 3 rows accepted (NGK 1, Motul 2). |
 
 UPCitemdb trial search was tried for Automotive and returned no results for the test query, so no records come from it.
 
-## Counts (as of 2026-11-09)
+## Counts (as of 2026-11-10)
 
 | Domain | Accepted | Rejected | Notes |
 |---|---|---|---|
 | Cosmetics and Personal Care | 100 | 165 | 135 valid records were available. Only the first 100 were kept (upper limit of the task). 35 valid records were not used. |
-| Automotive and Industrial Parts | 8 | 122 | Target is 50. Short by 42. Manual official-site rows are still needed. |
+| Automotive and Industrial Parts | 11 | 122 | Target is 50. Short by 39. 8 from Open Products Facts and 3 from official manufacturer sites (NGK 1, Motul 2). |
 | Electronics | pending | - | To be supplied by Utkarsh. |
 | Apparel and Fashion | pending | - | To be supplied by Utkarsh. |
 | Pharmaceuticals | pending | - | To be supplied by Ruchita. |
@@ -31,7 +31,7 @@ Full lists with the reason for each row: database/data/cosmetics_rejected.csv an
 
 ## Records without a verifiable GTIN
 
-None so far. Every accepted record has a barcode that passed the GTIN check digit test. Manual official-site rows may have no GTIN. In that case the gtin field stays empty and the model/part number is stored separately.
+1 record (NGK AS3-25) has no GTIN because its official page prints no barcode. The other 110 records have a barcode that passed the GTIN check digit test. Manual official-site rows may have no GTIN. In that case the gtin field stays empty and the model/part number is stored separately.
 
 ## Known gaps
 
