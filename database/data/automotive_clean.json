@@ -10,7 +10,7 @@
     "source_name": "Open Products Facts",
     "source_url": "https://world.openproductsfacts.org/product/7316577045263",
     "source_record_id": "7316577045263",
-    "collected_at": "2026-11-10"
+    "collected_at": "2026-11-11"
   },
   {
     "gtin": "9555394802378",
@@ -23,7 +23,7 @@
     "source_name": "Open Products Facts",
     "source_url": "https://world.openproductsfacts.org/product/9555394802378",
     "source_record_id": "9555394802378",
-    "collected_at": "2026-11-10"
+    "collected_at": "2026-11-11"
   },
   {
     "gtin": "0022513106208",
@@ -36,7 +36,7 @@
     "source_name": "Open Products Facts",
     "source_url": "https://world.openproductsfacts.org/product/0022513106208",
     "source_record_id": "0022513106208",
-    "collected_at": "2026-11-10"
+    "collected_at": "2026-11-11"
   },
   {
     "gtin": "9555134500069",
@@ -49,7 +49,7 @@
     "source_name": "Open Products Facts",
     "source_url": "https://world.openproductsfacts.org/product/9555134500069",
     "source_record_id": "9555134500069",
-    "collected_at": "2026-11-10"
+    "collected_at": "2026-11-11"
   },
   {
     "gtin": "3374650002170",
@@ -62,7 +62,7 @@
     "source_name": "Open Products Facts",
     "source_url": "https://world.openproductsfacts.org/product/3374650002170",
     "source_record_id": "3374650002170",
-    "collected_at": "2026-11-10"
+    "collected_at": "2026-11-11"
   },
   {
     "gtin": "0074130031777",
@@ -75,7 +75,7 @@
     "source_name": "Open Products Facts",
     "source_url": "https://world.openproductsfacts.org/product/0074130031777",
     "source_record_id": "0074130031777",
-    "collected_at": "2026-11-10"
+    "collected_at": "2026-11-11"
   },
   {
     "gtin": "0031508420977",
@@ -88,7 +88,7 @@
     "source_name": "Open Products Facts",
     "source_url": "https://world.openproductsfacts.org/product/0031508420977",
     "source_record_id": "0031508420977",
-    "collected_at": "2026-11-10"
+    "collected_at": "2026-11-11"
   },
   {
     "gtin": "4004764784448",
@@ -101,7 +101,7 @@
     "source_name": "Open Products Facts",
     "source_url": "https://world.openproductsfacts.org/product/4004764784448",
     "source_record_id": "4004764784448",
-    "collected_at": "2026-11-10"
+    "collected_at": "2026-11-11"
   },
   {
     "gtin": "",
@@ -114,6 +114,32 @@
     "source_name": "Official manufacturer website (ngksparkplugs.com)",
     "source_url": "https://ngksparkplugs.com/en/products/ignition-parts/ener-gx-spark-plugs",
     "source_record_id": "AS3-25",
-    "collected_at": "2026-11-10"
+    "collected_at": "2026-11-11"
+  },
+  {
+    "gtin": "3374650003399",
+    "product_name": "MOTUL GEAR 300 75W-90",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "Transmission oil for manual gearboxes of racing and high performance vehicles, API GL-4 and GL-5, 1L pack",
+    "model_part_number": "105777",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-ZA/products/34200",
+    "source_record_id": "105777",
+    "collected_at": "2026-11-11"
+  },
+  {
+    "gtin": "3374650237060",
+    "product_name": "MOTUL GEAR 300 LS 75W-90",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "Transmission oil for manual gearboxes of racing and high performance vehicles, API GL-5 and GL-4, 1L pack",
+    "model_part_number": "105778",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-ZA/products/34210",
+    "source_record_id": "105778",
+    "collected_at": "2026-11-11"
   }
 ]
