@@ -141,5 +141,83 @@
     "source_url": "https://www.motul.com/en-ZA/products/34210",
     "source_record_id": "105778",
     "collected_at": "2026-11-11"
+  },
+  {
+    "gtin": "3374650327938",
+    "product_name": "MOTUL GEAR POWER FE 75W",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "Transmission oil for latest generation manual gearboxes, fuel economy SAE 75W grade, API GL-4, 1L pack",
+    "model_part_number": "111148",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-ZA/products/34782",
+    "source_record_id": "111148",
+    "collected_at": "2026-11-11"
+  },
+  {
+    "gtin": "3374650261676",
+    "product_name": "MOTUL GEAR SYNTH XD 75W-80",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "Fully synthetic transmission oil for heavy duty manual gearboxes, SAE 75W-80, API GL-4, 208L pack",
+    "model_part_number": "107002",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-ZA/products/34692",
+    "source_record_id": "107002",
+    "collected_at": "2026-11-11"
+  },
+  {
+    "gtin": "3374650234397",
+    "product_name": "MOTUL GEAR SYNT TDL 75W-90",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "Fully synthetic transmission oil for heavily loaded mechanical gearboxes and long drain service, SAE 75W-90, API GL-5 and GL-4, 208L pack",
+    "model_part_number": "102187",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-ZA/products/34900",
+    "source_record_id": "102187",
+    "collected_at": "2026-11-11"
+  },
+  {
+    "gtin": "3374650238395",
+    "product_name": "MOTUL 8100 ECO-CLEAN 0W-30",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "100% synthetic fuel economy engine oil for low friction engines, SAE 0W-30, ACEA C2, 5L pack",
+    "model_part_number": "102889",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-ZA/products/17010",
+    "source_record_id": "102889",
+    "collected_at": "2026-11-11"
+  },
+  {
+    "gtin": "3374650258010",
+    "product_name": "MOTUL MULTI HF",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "Synthetic based hydraulic fluid for power steering, hydraulic dampers and hydraulic hard tops, 1L pack",
+    "model_part_number": "106399",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-ZA/products/45750",
+    "source_record_id": "106399",
+    "collected_at": "2026-11-11"
+  },
+  {
+    "gtin": "3374650276052",
+    "product_name": "MOTUL AUTOMATIC TRANSMISSION CLEAN",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "Pre-drain cleaner for automatic transmissions, removes sludge and deposits before an oil change, 0.3L pack",
+    "model_part_number": "108127",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-ZA/products/19274",
+    "source_record_id": "108127",
+    "collected_at": "2026-11-11"
   }
 ]
