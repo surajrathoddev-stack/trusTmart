@@ -39,3 +39,24 @@
 - One licence type is State. The rest are Central.
 - Four rows show expired licences (Inactive).
 - The same company name appears in different capitalisation (for example, "BRITANNIA INDUSTRIES LIMITED" and "Britannia Industries Limited").
+
+## MCA master data (research, by hand)
+Lead decision: both MCA and FSSAI are required. Manual reviewer verification is acceptable for the prototype. Find the MCA master data source; do not use the directors-under-prosecution page.
+
+## Page: MCA services > Master Data section
+Login or registration required: yes
+Registration: not done (requires business or personal details)
+Public search without login: not found yet
+
+Header search for "Britannia Industries": No matching results found (0 in all categories, including Data & Reports)
+Interpretation: header search covers site pages and documents only; company records require login
+
+## MCA master data: access check
+
+- **Page reached:** MCA Services > Master Data
+- **Result every time:** redirected to the login page (User ID: CIN for companies, email for other users)
+- **Public company search:** not found. The header search for "Britannia Industries" returned "No matching results found."
+- **Registration:** not done. It needs business or personal details, so it is not done without authorisation.
+- **Conclusion:** MCA company master data is only available after login. Access depends on a named person in the team or college holding an authorised login.
+- **Status:** waiting for the lead's decision.
+- **Date checked:** (fill in)
