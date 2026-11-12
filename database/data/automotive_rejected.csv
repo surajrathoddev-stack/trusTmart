@@ -1,0 +1,123 @@
+﻿code,product_name,brand,reason,source_file
+0763477000880,BBP-1.2 Bottom Bracket Bearing Press Set,Park Tool,excluded after manual review: not an automotive or industrial product,auto_bearing.json
+0763477000958,BBT-30.4 Bottom Bracket Bearing Tool Set,Park Tool,excluded after manual review: not an automotive or industrial product,auto_bearing.json
+0763477000644,BBT-90.3 Press Fit Bottom Bracket Bearing Tool Set,Park Tool,excluded after manual review: not an automotive or industrial product,auto_bearing.json
+0689228097056,BR-M530 Brake Shoe & Nut Set S70T,Shimano,excluded after manual review: not an automotive or industrial product,auto_brake.json
+3032651883791,Paire de patins de freins de route,manufacture française du cycle,excluded after manual review: not an automotive or industrial product,auto_brake.json
+16920211,Hayes Stroker Trail,EBC Brakes,invalid or missing barcode (format or check digit),auto_brake.json
+0763477001481,BKD-1.2 Hydraulic Brake Bleed Kit - DOT,Park Tool,excluded after manual review: not an automotive or industrial product,auto_brake.json
+0713153294119,100-Pack 8-Inch Cable Ties,Walmart,excluded after manual review: not an automotive or industrial product,auto_cable_tie.json
+3596710084494,,,missing product name,auto_coolant.json
+9342386012491,Masonry Drill Bit 3.5 × 75mm,Alpha,excluded after manual review: not an automotive or industrial product,auto_drill_bit.json
+3276009971581,,Dexter,missing product name,auto_drill_bit.json
+6156966698761,5W 40 Engine Oil,Lube Afri,invalid or missing barcode (format or check digit),auto_engine_oil.json
+8697713836068,Grease Cleaner Spray For Surfaces Magic Yellow,Asperox,excluded after manual review: not an automotive or industrial product,auto_grease.json
+5053249252759,Elbow grease,,missing brand,auto_grease.json
+5053249274447,Elbow Grease Multipurpose Degreaser 500mL,Elbow Grease,excluded after manual review: not an automotive or industrial product,auto_grease.json
+5053249274614,Elbow Grease Cleaning Paste 850g,Elbow Grease,excluded after manual review: not an automotive or industrial product,auto_grease.json
+7316577045263,Bearing Grease,SKF,duplicate barcode,auto_grease.json
+00011370,Refresh Tears,,invalid or missing barcode (format or check digit),auto_lubricant.json
+0699439001575,Premium Anal Lubricant,Swiss Navy,excluded after manual review: not an automotive or industrial product,auto_lubricant.json
+5011987268579,,,missing product name,auto_lubricant.json
+7612741122779,,,missing product name,auto_lubricant.json
+5011987139640,,,missing product name,auto_lubricant.json
+5011987268685,,,missing product name,auto_lubricant.json
+5011987139923,,,missing product name,auto_lubricant.json
+5011987139152,,,missing product name,auto_lubricant.json
+5011987139428,,,missing product name,auto_lubricant.json
+5011987274419,,,missing product name,auto_lubricant.json
+5011987274501,,,missing product name,auto_lubricant.json
+5011987139275,,,missing product name,auto_lubricant.json
+5011987274266,,,missing product name,auto_lubricant.json
+5011987138988,,,missing product name,auto_lubricant.json
+5011987139190,,,missing product name,auto_lubricant.json
+5011987139213,,,missing product name,auto_lubricant.json
+5011987274433,,,missing product name,auto_lubricant.json
+5011987139961,,,missing product name,auto_lubricant.json
+5011987139886,,,missing product name,auto_lubricant.json
+5011987267480,,,missing product name,auto_lubricant.json
+5011987139350,,,missing product name,auto_lubricant.json
+5011987139374,,,missing product name,auto_lubricant.json
+5011987044821,,,missing product name,auto_lubricant.json
+5011987139411,,,missing product name,auto_lubricant.json
+5011987139459,,,missing product name,auto_lubricant.json
+5011987139855,,,missing product name,auto_lubricant.json
+5011987139473,,,missing product name,auto_lubricant.json
+5011987139879,,,missing product name,auto_lubricant.json
+5011987274334,,,missing product name,auto_lubricant.json
+5011987274389,,,missing product name,auto_lubricant.json
+5011987274402,,,missing product name,auto_lubricant.json
+5011987281943,,,missing product name,auto_lubricant.json
+5011987139381,,,missing product name,auto_lubricant.json
+5011987139466,,,missing product name,auto_lubricant.json
+5011987139862,,,missing product name,auto_lubricant.json
+5011987274372,,,missing product name,auto_lubricant.json
+5011987139756,,,missing product name,auto_lubricant.json
+5011987020641,,,missing product name,auto_lubricant.json
+5011987274310,,,missing product name,auto_lubricant.json
+5011987138964,,,missing product name,auto_lubricant.json
+5011987274303,,,missing product name,auto_lubricant.json
+5011987139480,,,missing product name,auto_lubricant.json
+5011987274396,,,missing product name,auto_lubricant.json
+7612741122281,,,missing product name,auto_lubricant.json
+5011987139268,,,missing product name,auto_lubricant.json
+5011987139343,,,missing product name,auto_lubricant.json
+5011987268975,,,missing product name,auto_lubricant.json
+5011987139206,,,missing product name,auto_lubricant.json
+5011987139435,,,missing product name,auto_lubricant.json
+5011987268586,,,missing product name,auto_lubricant.json
+5011987268708,,,missing product name,auto_lubricant.json
+5011987083356,,,missing product name,auto_lubricant.json
+5011987139367,,,missing product name,auto_lubricant.json
+5011987276772,,,missing product name,auto_lubricant.json
+5011987044838,,,missing product name,auto_lubricant.json
+5011987139138,,,missing product name,auto_lubricant.json
+5011987139404,,,missing product name,auto_lubricant.json
+5011987139848,,,missing product name,auto_lubricant.json
+5011987284135,,,missing product name,auto_lubricant.json
+5011987276048,,,missing product name,auto_lubricant.json
+5011987139657,,,missing product name,auto_lubricant.json
+5011987138971,,,missing product name,auto_lubricant.json
+5011987139497,,,missing product name,auto_lubricant.json
+5011987139145,,,missing product name,auto_lubricant.json
+5011987139398,,,missing product name,auto_lubricant.json
+7612741122359,,,missing product name,auto_lubricant.json
+5011987139183,,,missing product name,auto_lubricant.json
+5011987139930,,,missing product name,auto_lubricant.json
+5011987139176,,,missing product name,auto_lubricant.json
+5011987139442,,,missing product name,auto_lubricant.json
+5011987139015,,,missing product name,auto_lubricant.json
+5011987139169,,,missing product name,auto_lubricant.json
+5011987274426,,,missing product name,auto_lubricant.json
+5011987139763,,,missing product name,auto_lubricant.json
+5011987275966,,,missing product name,auto_lubricant.json
+5011987276055,,,missing product name,auto_lubricant.json
+5011987140509,,,missing product name,auto_lubricant.json
+5011987274273,,,missing product name,auto_lubricant.json
+5011987139664,,,missing product name,auto_lubricant.json
+5011987139893,,,missing product name,auto_lubricant.json
+8410921042263,,,missing product name,auto_lubricant.json
+8410921042287,,,missing product name,auto_lubricant.json
+7350071223062,,,missing product name,auto_lubricant.json
+7350071223031,,,missing product name,auto_lubricant.json
+8435436218903,,,missing product name,auto_lubricant.json
+8410921021640,,,missing product name,auto_lubricant.json
+8410921042270,,,missing product name,auto_lubricant.json
+8101410550382,,,missing product name,auto_lubricant.json
+8101410550313,,,missing product name,auto_lubricant.json
+7350071223079,,,missing product name,auto_lubricant.json
+7350071223055,,,missing product name,auto_lubricant.json
+5203697031141,,,missing product name,auto_lubricant.json
+4251148653092,,,missing product name,auto_lubricant.json
+8594030370018,,,missing product name,auto_lubricant.json
+5203697031134,,,missing product name,auto_lubricant.json
+4260214890088,,,missing product name,auto_lubricant.json
+8101410550375,,,missing product name,auto_lubricant.json
+7090017803896,,,missing product name,auto_lubricant.json
+7090017803926,,,missing product name,auto_lubricant.json
+4019444003580,Spark Plugs,Moldex,excluded after manual review: not an automotive or industrial product,auto_spark_plug.json
+3501361223673,Tyre tread,,missing brand,auto_tyre.json
+0724022286968,ultimate tyre sealant,tru tension ltd,excluded after manual review: not an automotive or industrial product,auto_tyre.json
+8906100180814,Shine Wiper,Pittie,excluded after manual review: not an automotive or industrial product,auto_wiper.json
+8697425883350,Mini Wiper 12 cm,Flora,excluded after manual review: not an automotive or industrial product,auto_wiper.json
+9557907091378,Easy sweeper wiper Mop Wet disposable wipes,Scotch-Brite,excluded after manual review: not an automotive or industrial product,auto_wiper.json
