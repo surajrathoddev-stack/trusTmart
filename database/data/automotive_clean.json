@@ -284,5 +284,31 @@
     "source_url": "https://www.motul.com/en-ZA/products/34780",
     "source_record_id": "111131",
     "collected_at": "2026-11-12"
+  },
+  {
+    "gtin": "3374650237909",
+    "product_name": "MOTUL 8100 ECO-NERGY 5W-30",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "100% synthetic fuel economy engine oil for recent engines, SAE 5W-30, ACEA A5/B5, API SP",
+    "model_part_number": "102782",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-ZA/products/17300",
+    "source_record_id": "102782",
+    "collected_at": "2026-11-12"
+  },
+  {
+    "gtin": "3374650327877",
+    "product_name": "MOTUL GEAR POWER 75W-80",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "Transmission oil for manual gearboxes requiring SAE 75W-80 grade, API GL-4 and GL-4+, 1L pack",
+    "model_part_number": "111133",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-ZA/products/34781",
+    "source_record_id": "111133",
+    "collected_at": "2026-11-12"
   }
 ]
