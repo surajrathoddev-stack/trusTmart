@@ -1,7 +1,13 @@
+from datetime import datetime, timezone
 from typing import Optional
 
 from fastapi import FastAPI
 from pydantic import BaseModel, ConfigDict, HttpUrl, field_validator
+
+from app.address_check import check_address
+from app.registry import ManualRegistryProvider, check_registry
+from app.scoring import score_assessment
+from app.website_check import check_website
 
 app = FastAPI(title="trusTmart Seller Verification")
 
@@ -39,9 +45,33 @@ def health():
 
 @app.post("/api/sellers/assess")
 def assess_seller(request: SellerAssessRequest):
-    # Placeholder. Real registry, website and address checks are connected in a later task.
+    checked_at = datetime.now(timezone.utc).isoformat()
+
+    # No reviewer records are loaded yet, so the registry check cannot pass.
+    registry_factor = check_registry(
+        ManualRegistryProvider([]),
+        request.registrationNumber,
+        request.legalName,
+    )
+
+    website_factor = check_website(
+        str(request.website) if request.website else None,
+        request.legalName,
+    )
+
+    # No registry address is available yet, so the address check cannot pass.
+    address_factor = check_address(request.address, None)
+
+    seller_factors = [registry_factor, website_factor, address_factor]
+    result = score_assessment(seller_factors)
+
     return {
-        "evidenceStatus": "UNKNOWN",
-        "score": None,
-        "explanation": "Checks are not implemented yet.",
+        "sellerId": None,
+        "evidenceStatus": result["evidenceStatus"],
+        "score": result["score"],
+        "factors": seller_factors,
+        "scoringBreakdown": result["factors"],
+        "explanation": result["explanation"],
+        "sourceUrls": [],
+        "checkedAt": checked_at,
     }
