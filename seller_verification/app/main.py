@@ -1,5 +1,5 @@
 from datetime import datetime, timezone
-from typing import Optional
+from typing import Literal, Optional
 
 from fastapi import FastAPI
 from pydantic import BaseModel, ConfigDict, HttpUrl, field_validator
@@ -11,6 +11,9 @@ from app.website_check import check_website
 
 app = FastAPI(title="trusTmart Seller Verification")
 
+# Allowed outcomes for the optional product and provenance signals.
+SignalResult = Literal["passed", "failed", "could not be verified"]
+
 
 class SellerAssessRequest(BaseModel):
     # Reject any field we did not define, so a typo is caught instead of silently ignored.
@@ -20,6 +23,9 @@ class SellerAssessRequest(BaseModel):
     website: Optional[HttpUrl] = None
     registrationNumber: Optional[str] = None
     address: Optional[str] = None
+    # Optional signals from other modules. Missing means "could not be verified".
+    productCheck: Optional[SignalResult] = None
+    provenanceCompleteness: Optional[SignalResult] = None
 
     @field_validator("legalName")
     @classmethod
@@ -53,17 +59,20 @@ def assess_seller(request: SellerAssessRequest):
         request.registrationNumber,
         request.legalName,
     )
-
     website_factor = check_website(
         str(request.website) if request.website else None,
         request.legalName,
     )
-
     # No registry address is available yet, so the address check cannot pass.
     address_factor = check_address(request.address, None)
 
     seller_factors = [registry_factor, website_factor, address_factor]
-    result = score_assessment(seller_factors)
+
+    # A missing signal stays "could not be verified" and never counts as a pass.
+    product_result = request.productCheck or "could not be verified"
+    provenance_result = request.provenanceCompleteness or "could not be verified"
+
+    result = score_assessment(seller_factors, product_result, provenance_result)
 
     return {
         "sellerId": None,
