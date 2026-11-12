@@ -61,6 +61,9 @@ def check_registry(
         record = provider.find(registration_number)
     except RegistryUnavailable:
         return _factor(factor, "could not be verified", "registry could not be reached")
+    except Exception:
+        # Any unexpected failure from a source must never become a pass.
+        return _factor(factor, "could not be verified", "registry returned an unusable response")
 
     if record is None:
         return _factor(factor, "could not be verified", "no registry record found for this number")
