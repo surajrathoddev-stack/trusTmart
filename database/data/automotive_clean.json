@@ -310,5 +310,31 @@
     "source_url": "https://www.motul.com/en-ZA/products/34781",
     "source_record_id": "111133",
     "collected_at": "2026-11-12"
+  },
+  {
+    "gtin": "3374650237473",
+    "product_name": "MOTUL CLASSIC 2100 15W-50",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "Semi-synthetic multigrade engine oil for classic engines built after 1970, SAE 15W-50, API SH/CF, 2L pack",
+    "model_part_number": "104512",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-ZA/products/25550",
+    "source_record_id": "104512",
+    "collected_at": "2026-11-12"
+  },
+  {
+    "gtin": "3374650322230",
+    "product_name": "MOTUL CLASSIC EIGHTIES 10W-40",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "Semi-synthetic multigrade engine oil for modern classic and youngtimer vehicles from the 1970s and 1980s, SAE 10W-40, API SL, 2L pack",
+    "model_part_number": "110619",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-ZA/products/25502",
+    "source_record_id": "110619",
+    "collected_at": "2026-11-12"
   }
 ]
