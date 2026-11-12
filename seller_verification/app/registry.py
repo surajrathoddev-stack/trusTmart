@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from typing import Optional, Protocol
 
-from app.name_matching import names_match
+from app.name_matching import compare_names
 
 
 class RegistryUnavailable(Exception):
@@ -68,11 +68,18 @@ def check_registry(
     if record.status.strip().upper() != "ACTIVE":
         return _factor(factor, "failed", f"registry status is {record.status}")
 
-    if not names_match(record.legal_name, legal_name):
+    name_result = compare_names(record.legal_name, legal_name)
+    if name_result == "different":
         return _factor(
             factor,
             "failed",
             f"registered name is '{record.legal_name}', not '{legal_name}'",
+        )
+    if name_result == "near":
+        return _factor(
+            factor,
+            "could not be verified",
+            f"names are similar but not identical ('{record.legal_name}' vs '{legal_name}'); a reviewer must confirm",
         )
 
     return _factor(factor, "passed", "number, status and name match the registry record")
