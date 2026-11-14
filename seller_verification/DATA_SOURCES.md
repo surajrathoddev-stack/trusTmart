@@ -14,7 +14,8 @@
 | Source | URL | Used for | Date checked | Terms about reuse | Approval status |
 |---|---|---|---|---|---|
 | Open Food Facts | https://world.openfoodfacts.org | FMCG and Food/Beverage records | (date you read the terms) | Open licence; attribution required; see terms page | Usable for prototype; lead approval pending |
-| openFDA | https://open.fda.gov | Pharmaceutical records | (fill in) | (fill in) | Pending check |
+| Open Food Facts | https://in.openfoodfacts.org | FMCG and Food/Beverage records (India site) |  12-11-26 | 1. Open Database License (for the full database)
+2. Database Contents License 1.0 (for individual text and data) | Usable for prototype; lead approval pending |
 
 ## Open Food Facts: terms summary (in my own words)
 
