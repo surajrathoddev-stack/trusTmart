@@ -14,8 +14,7 @@
 | Source | URL | Used for | Date checked | Terms about reuse | Approval status |
 |---|---|---|---|---|---|
 | Open Food Facts | https://world.openfoodfacts.org | FMCG and Food/Beverage records | (date you read the terms) | Open licence; attribution required; see terms page | Usable for prototype; lead approval pending |
-| Open Food Facts | https://in.openfoodfacts.org | FMCG and Food/Beverage records (India site) |  12-11-26 | 1. Open Database License (for the full database)
-2. Database Contents License 1.0 (for individual text and data) | Usable for prototype; lead approval pending |
+| Open Food Facts | https://in.openfoodfacts.org (records used); terms at https://world.openfoodfacts.org/terms-of-use | FMCG and Food/Beverage records | 2026-11-14 |Sources of contributions,Attribution of the contributions; Contributors agree to be credited by re-user by a link to the product to which they contribute | Usable for prototype; lead approval pending |
 
 ## Open Food Facts: terms summary (in my own words)
 
@@ -26,9 +25,6 @@
 - Users must follow the licence conditions if they reuse the data.
 - Data is provided without any guarantee of accuracy, so it must not be used for medical decisions.
 
-Keep a bullet only if the terms page says it. Add a bullet only after you have read it there.
-
 ## Notes
 
-- A source is "approved" only after its terms have been read and the lead has confirmed it.
 - Regulatory numbers such as NDC are kept separate from GTIN barcodes.
