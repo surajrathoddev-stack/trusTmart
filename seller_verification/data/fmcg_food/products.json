@@ -300,16 +300,16 @@
   },
   {
     "record_id": "24",
-    "product_name": "Parle -G Biscuit",
-    "brand": "parle",
+    "product_name": "Dark Fantasy Bourbon Biscuits",
+    "brand": "Sunfeast",
     "domain": "FMCG and Food/Beverage",
-    "description": "",
-    "barcode": "8901063093591",
+    "description": "Chocolate bourbon biscuits",
+    "barcode": "8901725016296",
     "source_name": "Open Food Facts",
-    "source_record_id": "8901063093591",
-    "source_url": "https://in.openfoodfacts.org/product/8901063093591",
+    "source_record_id": "8901725016296",
+    "source_url": "https://in.openfoodfacts.org/product/8901725016296/dark-fantasy-bourbon-biscuit-sunfeast",
     "checked_on": "2026-11-14",
-    "notes": "Product details not verified"
+    "notes": ""
   },
   {
     "record_id": "25",
