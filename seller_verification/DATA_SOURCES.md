@@ -13,18 +13,8 @@
 
 | Source | URL | Used for | Date checked | Terms about reuse | Approval status |
 |---|---|---|---|---|---|
-| Open Food Facts | https://world.openfoodfacts.org | FMCG and Food/Beverage records | (date you read the terms) | Open licence; attribution required; see terms page | Usable for prototype; lead approval pending |
-| Open Food Facts | https://in.openfoodfacts.org (records used); terms at https://world.openfoodfacts.org/terms-of-use | FMCG and Food/Beverage records | 2026-11-14 |Sources of contributions,Attribution of the contributions; Contributors agree to be credited by re-user by a link to the product to which they contribute | Usable for prototype; lead approval pending |.
 
-## Open Food Facts: terms summary (in my own words)
+| Open Food Facts | https://in.openfoodfacts.org (records used); terms at https://world.openfoodfacts.org/terms-of-use | FMCG and Food/Beverage records | 2026-11-14 |Free reuse (including commercial) with attribution, ShareAlike, and respect for third-party rights.| pending |
 
-**Terms page:** :https://world.openfoodfacts.org/terms-of-use
-**Date read:**  :14-11-26
+|Open FDA|https://open.fda.gov/|to give the public access to official health and safety records about medicines,medical devices, and food| 2026-11-14|Everything on openFDA completely free with almost zero restrictions| pending |
 
-- Data reuse is allowed under an open licence, and attribution to Open Food Facts is required.
-- Users must follow the licence conditions if they reuse the data.
-- Data is provided without any guarantee of accuracy, so it must not be used for medical decisions.
-
-## Notes
-
-- Regulatory numbers such as NDC are kept separate from GTIN barcodes.
