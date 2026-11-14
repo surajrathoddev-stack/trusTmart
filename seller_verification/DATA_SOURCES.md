@@ -16,5 +16,4 @@
 
 | Open Food Facts | https://in.openfoodfacts.org (records used); terms at https://world.openfoodfacts.org/terms-of-use | FMCG and Food/Beverage records | 2026-11-14 |Free reuse (including commercial) with attribution, ShareAlike, and respect for third-party rights.| pending |
 
-|Open FDA|https://open.fda.gov/|to give the public access to official health and safety records about medicines,medical devices, and food| 2026-11-14|Everything on openFDA completely free with almost zero restrictions| pending |
-
+| FDA National Drug Code Directory | https://www.accessdata.fda.gov/scripts/cder/ndc/dsp_searchresult.cfm | Pharmaceutical records (over-the-counter medicines only) | 2026-11-14 | Everything on openFDA completely free with almost zero restrictions | pending |
