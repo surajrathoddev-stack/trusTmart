@@ -14,7 +14,7 @@
 | Source | URL | Used for | Date checked | Terms about reuse | Approval status |
 |---|---|---|---|---|---|
 | Open Food Facts | https://world.openfoodfacts.org | FMCG and Food/Beverage records | (date you read the terms) | Open licence; attribution required; see terms page | Usable for prototype; lead approval pending |
-| Open Food Facts | https://in.openfoodfacts.org (records used); terms at https://world.openfoodfacts.org/terms-of-use | FMCG and Food/Beverage records | 2026-11-14 |Sources of contributions,Attribution of the contributions; Contributors agree to be credited by re-user by a link to the product to which they contribute | Usable for prototype; lead approval pending |
+| Open Food Facts | https://in.openfoodfacts.org (records used); terms at https://world.openfoodfacts.org/terms-of-use | FMCG and Food/Beverage records | 2026-11-14 |Sources of contributions,Attribution of the contributions; Contributors agree to be credited by re-user by a link to the product to which they contribute | Usable for prototype; lead approval pending |.
 
 ## Open Food Facts: terms summary (in my own words)
 
