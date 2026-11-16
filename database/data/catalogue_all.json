@@ -1,6 +1,6 @@
 [
   {
-    "gtin": "7316577045263",
+    "gtin": "",
     "product_name": "Bearing Grease",
     "brand": "SKF",
     "domain": "AUTOMOTIVE_INDUSTRIAL",
@@ -10,10 +10,10 @@
     "source_name": "Open Products Facts",
     "source_url": "https://world.openproductsfacts.org/product/7316577045263",
     "source_record_id": "7316577045263",
-    "collected_at": "2026-11-11"
+    "collected_at": "2026-11-16"
   },
   {
-    "gtin": "9555394802378",
+    "gtin": "",
     "product_name": "Multi Purpose 2-Stroke Engine Oil",
     "brand": "Pennzoil",
     "domain": "AUTOMOTIVE_INDUSTRIAL",
@@ -23,10 +23,10 @@
     "source_name": "Open Products Facts",
     "source_url": "https://world.openproductsfacts.org/product/9555394802378",
     "source_record_id": "9555394802378",
-    "collected_at": "2026-11-11"
+    "collected_at": "2026-11-16"
   },
   {
-    "gtin": "0022513106208",
+    "gtin": "",
     "product_name": "Synthetic Lithium Grease",
     "brand": "Top 1 Oil Products Co",
     "domain": "AUTOMOTIVE_INDUSTRIAL",
@@ -36,10 +36,10 @@
     "source_name": "Open Products Facts",
     "source_url": "https://world.openproductsfacts.org/product/0022513106208",
     "source_record_id": "0022513106208",
-    "collected_at": "2026-11-11"
+    "collected_at": "2026-11-16"
   },
   {
-    "gtin": "9555134500069",
+    "gtin": "",
     "product_name": "Multi Purpose Penetrant & Lubricant Spray",
     "brand": "Hardex",
     "domain": "AUTOMOTIVE_INDUSTRIAL",
@@ -49,10 +49,10 @@
     "source_name": "Open Products Facts",
     "source_url": "https://world.openproductsfacts.org/product/9555134500069",
     "source_record_id": "9555134500069",
-    "collected_at": "2026-11-11"
+    "collected_at": "2026-11-16"
   },
   {
-    "gtin": "3374650002170",
+    "gtin": "",
     "product_name": "Motul 2100 Power+",
     "brand": "Motul",
     "domain": "AUTOMOTIVE_INDUSTRIAL",
@@ -62,10 +62,10 @@
     "source_name": "Open Products Facts",
     "source_url": "https://world.openproductsfacts.org/product/3374650002170",
     "source_record_id": "3374650002170",
-    "collected_at": "2026-11-11"
+    "collected_at": "2026-11-16"
   },
   {
-    "gtin": "0074130031777",
+    "gtin": "",
     "product_name": "Full Synthetic Advanced Protection 0W-20",
     "brand": "Valvoline",
     "domain": "AUTOMOTIVE_INDUSTRIAL",
@@ -75,10 +75,10 @@
     "source_name": "Open Products Facts",
     "source_url": "https://world.openproductsfacts.org/product/0074130031777",
     "source_record_id": "0074130031777",
-    "collected_at": "2026-11-11"
+    "collected_at": "2026-11-16"
   },
   {
-    "gtin": "0031508420977",
+    "gtin": "",
     "product_name": "4 bougies AS42C",
     "brand": "Ford",
     "domain": "AUTOMOTIVE_INDUSTRIAL",
@@ -88,10 +88,10 @@
     "source_name": "Open Products Facts",
     "source_url": "https://world.openproductsfacts.org/product/0031508420977",
     "source_record_id": "0031508420977",
-    "collected_at": "2026-11-11"
+    "collected_at": "2026-11-16"
   },
   {
-    "gtin": "4004764784448",
+    "gtin": "",
     "product_name": "Edding 8050 Tyre Marker",
     "brand": "Edding",
     "domain": "AUTOMOTIVE_INDUSTRIAL",
@@ -101,7 +101,7 @@
     "source_name": "Open Products Facts",
     "source_url": "https://world.openproductsfacts.org/product/4004764784448",
     "source_record_id": "4004764784448",
-    "collected_at": "2026-11-11"
+    "collected_at": "2026-11-16"
   },
   {
     "gtin": "",
@@ -114,10 +114,10 @@
     "source_name": "Official manufacturer website (ngksparkplugs.com)",
     "source_url": "https://ngksparkplugs.com/en/products/ignition-parts/ener-gx-spark-plugs",
     "source_record_id": "AS3-25",
-    "collected_at": "2026-11-11"
+    "collected_at": "2026-11-16"
   },
   {
-    "gtin": "3374650003399",
+    "gtin": "",
     "product_name": "MOTUL GEAR 300 75W-90",
     "brand": "MOTUL",
     "domain": "AUTOMOTIVE_INDUSTRIAL",
@@ -127,10 +127,10 @@
     "source_name": "Official manufacturer website (www.motul.com)",
     "source_url": "https://www.motul.com/en-ZA/products/34200",
     "source_record_id": "105777",
-    "collected_at": "2026-11-11"
+    "collected_at": "2026-11-16"
   },
   {
-    "gtin": "3374650237060",
+    "gtin": "",
     "product_name": "MOTUL GEAR 300 LS 75W-90",
     "brand": "MOTUL",
     "domain": "AUTOMOTIVE_INDUSTRIAL",
@@ -140,10 +140,530 @@
     "source_name": "Official manufacturer website (www.motul.com)",
     "source_url": "https://www.motul.com/en-ZA/products/34210",
     "source_record_id": "105778",
-    "collected_at": "2026-11-11"
+    "collected_at": "2026-11-16"
   },
   {
-    "gtin": "8410757001090",
+    "gtin": "",
+    "product_name": "MOTUL GEAR POWER FE 75W",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "Transmission oil for latest generation manual gearboxes, fuel economy SAE 75W grade, API GL-4, 1L pack",
+    "model_part_number": "111148",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-ZA/products/34782",
+    "source_record_id": "111148",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "",
+    "product_name": "MOTUL GEAR SYNTH XD 75W-80",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "Fully synthetic transmission oil for heavy duty manual gearboxes, SAE 75W-80, API GL-4, 208L pack",
+    "model_part_number": "107002",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-ZA/products/34692",
+    "source_record_id": "107002",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "",
+    "product_name": "MOTUL GEAR SYNT TDL 75W-90",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "Fully synthetic transmission oil for heavily loaded mechanical gearboxes and long drain service, SAE 75W-90, API GL-5 and GL-4, 208L pack",
+    "model_part_number": "102187",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-ZA/products/34900",
+    "source_record_id": "102187",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "",
+    "product_name": "MOTUL 8100 ECO-CLEAN 0W-30",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "100% synthetic fuel economy engine oil for low friction engines, SAE 0W-30, ACEA C2, 5L pack",
+    "model_part_number": "102889",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-ZA/products/17010",
+    "source_record_id": "102889",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "",
+    "product_name": "MOTUL MULTI HF",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "Synthetic based hydraulic fluid for power steering, hydraulic dampers and hydraulic hard tops, 1L pack",
+    "model_part_number": "106399",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-ZA/products/45750",
+    "source_record_id": "106399",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "",
+    "product_name": "MOTUL AUTOMATIC TRANSMISSION CLEAN",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "Pre-drain cleaner for automatic transmissions, removes sludge and deposits before an oil change, 0.3L pack",
+    "model_part_number": "108127",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-ZA/products/19274",
+    "source_record_id": "108127",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "",
+    "product_name": "MOTUL 8100 X-MAX 0W-40",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "100% synthetic Full SAPS engine oil for high performance engines, SAE 0W-40, ACEA A3/B4, API SP",
+    "model_part_number": "104531",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-ZA/products/17920",
+    "source_record_id": "104531",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "",
+    "product_name": "MOTUL MULTI DCTF",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "High performance synthetic transmission fluid for dual clutch gearboxes (DCT)",
+    "model_part_number": "105786",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-ZA/products/45611",
+    "source_record_id": "105786",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "",
+    "product_name": "MOTUL CLASSIC 20W-50",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "Mineral multigrade engine oil for classic car engines built between 1950 and 1970, SAE 20W-50, API SF/CC, 2L pack",
+    "model_part_number": "104511",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-ZA/products/25500",
+    "source_record_id": "104511",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "",
+    "product_name": "MOTUL GEAR COMPETITION 75W-140",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "Transmission oil for racing vehicle gearboxes and hypoid differentials, SAE 75W-140, API GL-5",
+    "model_part_number": "105779",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-ZA/products/34300",
+    "source_record_id": "105779",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "",
+    "product_name": "MOTUL GEAR POWER LV 70W",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "Low viscosity transmission oil for latest generation manual gearboxes, SAE 70W, API GL-4, 1L pack",
+    "model_part_number": "111131",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-ZA/products/34780",
+    "source_record_id": "111131",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "",
+    "product_name": "MOTUL 8100 ECO-NERGY 5W-30",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "100% synthetic fuel economy engine oil for recent engines, SAE 5W-30, ACEA A5/B5, API SP",
+    "model_part_number": "102782",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-ZA/products/17300",
+    "source_record_id": "102782",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "",
+    "product_name": "MOTUL GEAR POWER 75W-80",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "Transmission oil for manual gearboxes requiring SAE 75W-80 grade, API GL-4 and GL-4+, 1L pack",
+    "model_part_number": "111133",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-ZA/products/34781",
+    "source_record_id": "111133",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "",
+    "product_name": "MOTUL CLASSIC 2100 15W-50",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "Semi-synthetic multigrade engine oil for classic engines built after 1970, SAE 15W-50, API SH/CF, 2L pack",
+    "model_part_number": "104512",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-ZA/products/25550",
+    "source_record_id": "104512",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "",
+    "product_name": "MOTUL CLASSIC EIGHTIES 10W-40",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "Semi-synthetic multigrade engine oil for modern classic and youngtimer vehicles from the 1970s and 1980s, SAE 10W-40, API SL, 2L pack",
+    "model_part_number": "110619",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-ZA/products/25502",
+    "source_record_id": "110619",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "",
+    "product_name": "MOTUL 8100 X-CLEAN+ 5W-30",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "100% synthetic engine oil for latest generation diesel and gasoline engines, SAE 5W-30, ACEA C3",
+    "model_part_number": "106376",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-ZA/products/17720",
+    "source_record_id": "106376",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "",
+    "product_name": "MOTUL 8100 ECO-LITE 5W-30",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "100% synthetic fuel economy engine oil for recent gasoline engines, SAE 5W-30, API SQ-RC, ILSAC GF-7A",
+    "model_part_number": "108212",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-ZA/products/17201",
+    "source_record_id": "108212",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "",
+    "product_name": "MOTUL CLASSIC NINETIES 10W-30",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "Semi-synthetic multigrade engine oil for modern classic and youngtimer vehicles, SAE 10W-30, API SL, 2L pack",
+    "model_part_number": "110620",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-ZA/products/25503",
+    "source_record_id": "110620",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "",
+    "product_name": "MOTUL CLASSIC SAE 50",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "Mineral monograde lubricant for classic gasoline or diesel 4-stroke engines and transmissions, SAE 50, 2L pack",
+    "model_part_number": "104510",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-ZA/products/25600",
+    "source_record_id": "104510",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "",
+    "product_name": "MOTUL 8100 X-CESS 5W-40",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "100% synthetic engine oil for powerful recent gasoline and diesel cars, SAE 5W-40, ACEA A3/B4, API SN",
+    "model_part_number": "102784",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-ZA/products/17600",
+    "source_record_id": "102784",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "",
+    "product_name": "MOTUL 8100 X-CESS GEN2 5W-40",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "100% synthetic engine oil for powerful recent cars with large displacement engines, SAE 5W-40, ACEA A3/B4, API SQ",
+    "model_part_number": "109774",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-ZA/products/17603",
+    "source_record_id": "109774",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "",
+    "product_name": "MOTUL DOT 4",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "Brake fluid for hydraulic brake and clutch systems meeting DOT 4 recommendations, pack sizes 0.2L, 0.5L and 1L",
+    "model_part_number": "112833",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (motul.com)",
+    "source_url": "https://motul.com/en-AU/products/27300",
+    "source_record_id": "112833",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "",
+    "product_name": "MOTUL DOT 3&4",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "Fully synthetic brake fluid for hydraulic brake and clutch systems requiring DOT 4 or DOT 3 fluid",
+    "model_part_number": "102718",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (motul.com)",
+    "source_url": "https://motul.com/en-EE/products/27250",
+    "source_record_id": "102718",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "",
+    "product_name": "MOTUL RBF 600 FACTORY LINE",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "Non-silicone synthetic brake fluid for hydraulic brake and clutch systems, racing use, 0.5L pack",
+    "model_part_number": "100948",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (motul.com)",
+    "source_url": "https://motul.com/en-IS/products/48100",
+    "source_record_id": "100948",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "",
+    "product_name": "MOTUL 8100 X-CLEAN GEN2 5W-40",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "100% synthetic engine oil approved by many car makers for latest generation engines, SAE 5W-40, ACEA C3, API SP",
+    "model_part_number": "109761",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-AE/products/17702",
+    "source_record_id": "109761",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "",
+    "product_name": "MOTUL 8100 X-CLEAN 5W-40",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "100% synthetic engine oil approved by many car makers for latest generation engines, SAE 5W-40, ACEA C3, API SN",
+    "model_part_number": "102786",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-AE/products/17700",
+    "source_record_id": "102786",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "",
+    "product_name": "MOTUL DOT 5.1",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "Brake fluid for hydraulic brake and clutch systems requiring DOT 3, DOT 4 or DOT 5.1 fluid, pack sizes 0.5L, 1L and 5L",
+    "model_part_number": "112864",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (motul.com)",
+    "source_url": "https://motul.com/en-AU/products/27400",
+    "source_record_id": "112864",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "",
+    "product_name": "MOTUL DOT 4 LV",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "Low viscosity brake fluid for hydraulic brake and clutch systems of vehicles with ABS and ESP, 0.5L pack",
+    "model_part_number": "109434",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-AU/products/27302",
+    "source_record_id": "109434",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "",
+    "product_name": "MOTUL RBF 660 FACTORY LINE",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "Non-silicone synthetic racing brake fluid for hydraulic brake and clutch systems, 0.5L pack",
+    "model_part_number": "101666",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-IS/products/48200",
+    "source_record_id": "101666",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "",
+    "product_name": "MOTUL RBF 700",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "High-performance racing brake fluid for consistent braking, 0.5L pack",
+    "model_part_number": "109452",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-IS/products/48201",
+    "source_record_id": "109452",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "",
+    "product_name": "MOTUL 8100 X-CLEAN+ EFE 0W-30",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "100% synthetic engine oil for latest generation diesel and gasoline engines, SAE 0W-30, ACEA C3",
+    "model_part_number": "111657",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-AE/products/17724",
+    "source_record_id": "111657",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "",
+    "product_name": "MOTUL 8100 X-POWER 10W-60",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "100% synthetic engine oil for high performance cars, SAE 10W-60, ACEA A3/B4, API SP",
+    "model_part_number": "106142",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-AE/products/17950",
+    "source_record_id": "106142",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "",
+    "product_name": "MOTUL E DOT 5.1",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "100% synthetic glycol ether brake fluid for hydraulic brake systems, 0.5L pack",
+    "model_part_number": "113121",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-AU/products/27410",
+    "source_record_id": "113121",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "",
+    "product_name": "MOTUL SPECIFIC 504 00 507 00 5W-30",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "100% synthetic engine oil for recent VAG Group cars with Euro 4, 5 and 6 engines, SAE 5W-30, ACEA C3, VW 504 00 507 00",
+    "model_part_number": "106374",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-AE/products/59100",
+    "source_record_id": "106374",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "",
+    "product_name": "MOTUL 8100 ECO-CLEAN 0W-20",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "100% synthetic fuel economy engine oil, SAE 0W-20, ACEA C5 and C6, API SQ, ILSAC GF-7A",
+    "model_part_number": "108813",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-AE/products/17011",
+    "source_record_id": "108813",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "",
+    "product_name": "MOTUL IRIX TECH 300",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "High performance multipurpose grease for roller bearings, plain bearings and thrust bearings, 0.4kg pack",
+    "model_part_number": "108664",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-AU/products/69001",
+    "source_record_id": "108664",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "",
+    "product_name": "MOTUL MULTI ATF",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "100% synthetic high performance fluid for modern automatic transmissions, pack sizes 1L and 20L",
+    "model_part_number": "105784",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-AE/products/45600",
+    "source_record_id": "105784",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "",
+    "product_name": "MOTUL ATF VI",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "100% synthetic high performance low viscosity fluid for modern automatic transmissions, pack sizes 1L, 20L and 208L",
+    "model_part_number": "105774",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-AE/products/19280",
+    "source_record_id": "105774",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "",
+    "product_name": "MOTUL ATF HD",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "Fully synthetic fluid for heavy duty automatic transmissions with long oil change intervals, 208L pack",
+    "model_part_number": "107908",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-AE/products/19277",
+    "source_record_id": "107908",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "",
+    "product_name": "MOTUL TRANS ATF VI",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "100% synthetic high performance low viscosity fluid for modern automatic transmissions, pack sizes 1L, 20L and 208L",
+    "model_part_number": "109771",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-AE/products/73851",
+    "source_record_id": "109771",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "",
     "product_name": "Crema Manos",
     "brand": "S'nonas",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -156,7 +676,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "3337875598996",
+    "gtin": "",
     "product_name": "moisturising cream",
     "brand": "CeraVe",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -169,7 +689,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "8886467010309",
+    "gtin": "",
     "product_name": "Lalla",
     "brand": "Lalal",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -182,7 +702,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "3600541177741",
+    "gtin": "",
     "product_name": "68YN5T 400ml",
     "brand": "Ultra doux",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -195,7 +715,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "3600551119922",
+    "gtin": "",
     "product_name": "Lait de toilette très doux",
     "brand": "Mixa",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -208,7 +728,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "6111056012986",
+    "gtin": "",
     "product_name": "cadum",
     "brand": "cadum",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -221,7 +741,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "6111245596099",
+    "gtin": "",
     "product_name": "Lingette Bebe 120x",
     "brand": "Dalaa Baby",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -234,7 +754,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "8718951698642",
+    "gtin": "",
     "product_name": "Codum",
     "brand": "Cadum",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -247,7 +767,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "42164104",
+    "gtin": "",
     "product_name": "Creme",
     "brand": "NIVEA",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -260,7 +780,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "4066447341942",
+    "gtin": "",
     "product_name": "Deocreme mit Natron und Zink",
     "brand": "Balea",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -273,7 +793,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "3337875546430",
+    "gtin": "",
     "product_name": "LA ROCHE-POSAY",
     "brand": "La Roche-Posay",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -286,7 +806,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "6111260265291",
+    "gtin": "",
     "product_name": "Kalos",
     "brand": "Kalos",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -299,7 +819,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "4003143005402",
+    "gtin": "",
     "product_name": "novobac",
     "brand": "p.n.f",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -312,7 +832,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "3574661489087",
+    "gtin": "",
     "product_name": "Soleil biafine",
     "brand": "Biafine",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -325,7 +845,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "5410076651627",
+    "gtin": "",
     "product_name": "Champoings",
     "brand": "Pantene",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -338,7 +858,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "8411322240227",
+    "gtin": "",
     "product_name": "créme activ",
     "brand": "nelly",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -351,7 +871,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "4005808890576",
+    "gtin": "",
     "product_name": "Nivea soft",
     "brand": "Nivéa",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -364,7 +884,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "8001090662231",
+    "gtin": "",
     "product_name": "Coconut Milk",
     "brand": "Herbal Essences",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -377,7 +897,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "3574669907842",
+    "gtin": "",
     "product_name": "johnsons",
     "brand": "shampo",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -390,7 +910,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "6118000041566",
+    "gtin": "",
     "product_name": "DoliGrippe",
     "brand": "Paracétamol - Vitamine C - Maleate de Pheniramine",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -403,7 +923,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "3610340670909",
+    "gtin": "",
     "product_name": "Ganier",
     "brand": "Ganier",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -416,7 +936,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "3600551146010",
+    "gtin": "",
     "product_name": "Magnésium PROTECT 48H",
     "brand": "NARTA",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -429,7 +949,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "3337871327804",
+    "gtin": "",
     "product_name": "idéal soleil",
     "brand": "Vichy",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -442,7 +962,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "4005800119361",
+    "gtin": "",
     "product_name": "Oil control",
     "brand": "Eucerin",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -455,7 +975,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "3600540539397",
+    "gtin": "",
     "product_name": "garnier",
     "brand": "Garnier",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -468,7 +988,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "8480000467713",
+    "gtin": "",
     "product_name": "Cream pure urea 10%",
     "brand": "Deliplus",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -481,7 +1001,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "8717163997345",
+    "gtin": "",
     "product_name": "Dove Original Anti-persperant",
     "brand": "Dove",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -494,7 +1014,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "3610340652745",
+    "gtin": "",
     "product_name": "Ultra Doux",
     "brand": "Garnier",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -507,7 +1027,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "8718481351000",
+    "gtin": "",
     "product_name": "Gel 92 % Aloe vera",
     "brand": "Betty's nature",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -520,7 +1040,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "8717163004869",
+    "gtin": "",
     "product_name": "Go fresh",
     "brand": "Dove",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -533,7 +1053,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "8480000467942",
+    "gtin": "",
     "product_name": "Deodorant",
     "brand": "Deliplus",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -546,7 +1066,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "3600542146470",
+    "gtin": "",
     "product_name": "0",
     "brand": "Garnier",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -559,7 +1079,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "3600522410874",
+    "gtin": "",
     "product_name": "Huile extraordinaire",
     "brand": "L'Oréal Paris",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -572,7 +1092,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "3574661288352",
+    "gtin": "",
     "product_name": "Nottregona",
     "brand": "Neutrogena",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -585,7 +1105,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "6223000659243",
+    "gtin": "",
     "product_name": "Johnsons",
     "brand": "Johnsons",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -598,7 +1118,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "6111250475136",
+    "gtin": "",
     "product_name": "Lingettes",
     "brand": "Famil",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -611,7 +1131,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "3337875816847",
+    "gtin": "",
     "product_name": "Cicaplast Baume B5+",
     "brand": "La Roche Posay",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -624,7 +1144,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "7612076448278",
+    "gtin": "",
     "product_name": "daylong",
     "brand": "Nestlé Skin Health",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -637,7 +1157,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "7702018271788",
+    "gtin": "",
     "product_name": "Sport Triumph",
     "brand": "Gillette",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -650,7 +1170,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "6118000080039",
+    "gtin": "",
     "product_name": "brufen",
     "brand": "médicament",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -663,7 +1183,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "40058153",
+    "gtin": "",
     "product_name": "Nivea Creeme",
     "brand": "Nivea",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -676,7 +1196,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "3549620008388",
+    "gtin": "",
     "product_name": "Shampooing karité",
     "brand": "Le Petit Olivier",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -689,7 +1209,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "8710522417379",
+    "gtin": "",
     "product_name": "Signal Integral 8 Dentifrice Nature Elements Charbon 75ml",
     "brand": "Signal",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -702,7 +1222,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "3337875696548",
+    "gtin": "",
     "product_name": "Lipikar Baume AP+ M",
     "brand": "La Roche-Posay",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -715,7 +1235,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "3600551119816",
+    "gtin": "",
     "product_name": "Shampoing très doux démêlant karité pur + huile de jojoba",
     "brand": "Mixa Bébé",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -728,7 +1248,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "6221048407796",
+    "gtin": "",
     "product_name": "Signal",
     "brand": "Signal",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -741,7 +1261,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "3600522215370",
+    "gtin": "",
     "product_name": "Huile extraordinaire",
     "brand": "Elsrve",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -754,7 +1274,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "4005900369581",
+    "gtin": "",
     "product_name": "body lotion",
     "brand": "Nivea",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -767,7 +1287,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "8410751093176",
+    "gtin": "",
     "product_name": "Fresa y nata",
     "brand": "Tulipan Negro",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -780,7 +1300,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "4005808925124",
+    "gtin": "",
     "product_name": "Nivea crème",
     "brand": "Beiersdorf",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -793,7 +1313,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "3600551146065",
+    "gtin": "",
     "product_name": "Déodorant invisimax",
     "brand": "Narta",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -806,7 +1326,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "42182634",
+    "gtin": "",
     "product_name": "Original Pure Petroleum Jelly",
     "brand": "Vaseline",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -819,7 +1339,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "8480000468772",
+    "gtin": "",
     "product_name": "leche limpiadora",
     "brand": "Deliplus",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -832,7 +1352,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "6118000040354",
+    "gtin": "",
     "product_name": "Doliprane",
     "brand": "Sanofi",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -845,7 +1365,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "8712561483162",
+    "gtin": "",
     "product_name": "Cocoa Radient",
     "brand": "Vaseline",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -858,7 +1378,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "80466468",
+    "gtin": "",
     "product_name": "DOVE Déodorant Femme Anti-Transpirant Stick Original 50ml",
     "brand": "Dove",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -871,7 +1391,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "8718951624764",
+    "gtin": "",
     "product_name": "Shampooing et Démêleur 2 en 1 Force & Nutrition à l'Huile d'Amande",
     "brand": "Cadum",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -884,7 +1404,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "6111266710054",
+    "gtin": "",
     "product_name": "WHite",
     "brand": "Crème solaire",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -897,7 +1417,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "6111259733787",
+    "gtin": "",
     "product_name": "اوني 750",
     "brand": "ONI",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -910,7 +1430,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "6111024009734",
+    "gtin": "",
     "product_name": "صابون الطاووس",
     "brand": "TAOUS",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -923,7 +1443,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "8001090134226",
+    "gtin": "",
     "product_name": "Toallitas",
     "brand": "Dodot",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -936,7 +1456,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "8723300710753",
+    "gtin": "",
     "product_name": "Skin Hair Nails",
     "brand": "innovit",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -949,7 +1469,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "4005900890504",
+    "gtin": "",
     "product_name": "Nivea Soft",
     "brand": "Nivea",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -962,7 +1482,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "6111250476676",
+    "gtin": "",
     "product_name": "Capitol",
     "brand": "Capitol",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -975,7 +1495,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "6111254780151",
+    "gtin": "",
     "product_name": "Sunskin 60",
     "brand": "Dermo soins",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -988,7 +1508,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "8480000443373",
+    "gtin": "",
     "product_name": "Argan oil shampoo",
     "brand": "Deliplus",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -1001,7 +1521,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "6111242926448",
+    "gtin": "",
     "product_name": "Vitaïa",
     "brand": "MUTANDIS",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -1014,7 +1534,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "3610340670947",
+    "gtin": "",
     "product_name": "Garnier Ultra DOUX",
     "brand": "Garnier",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -1027,7 +1547,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "3600551135779",
+    "gtin": "",
     "product_name": "Mixa expert peau sensible",
     "brand": "Mixa",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -1040,7 +1560,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "8718951599758",
+    "gtin": "",
     "product_name": "Dermo Protector",
     "brand": "Sanex",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -1053,7 +1573,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "3337872411083",
+    "gtin": "",
     "product_name": "Effaclar Purifying Foaming Gel Cleanser for Oily Skin",
     "brand": "Alani",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -1066,7 +1586,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "8002110383709",
+    "gtin": "",
     "product_name": "neutrogena creme main",
     "brand": "Freeos",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -1079,7 +1599,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "8428749800101",
+    "gtin": "",
     "product_name": "senstive skin",
     "brand": "sensilis",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -1092,7 +1612,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "8001090150981",
+    "gtin": "",
     "product_name": "oil replacement",
     "brand": "pantene",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -1105,7 +1625,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "8901009111631",
+    "gtin": "",
     "product_name": "Miswak",
     "brand": "Dabur",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -1118,7 +1638,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "8001090151001",
+    "gtin": "",
     "product_name": "pantine pro-v",
     "brand": "pantine",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -1131,7 +1651,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "6281001112013",
+    "gtin": "",
     "product_name": "Colgate",
     "brand": "Colgate",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -1144,7 +1664,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "6111033000524",
+    "gtin": "",
     "product_name": "Dissolvant doux",
     "brand": "Madonna",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -1157,7 +1677,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "3337875597395",
+    "gtin": "",
     "product_name": "Hydraterende Melk",
     "brand": "CeraVe",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -1170,7 +1690,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "8723300710807",
+    "gtin": "",
     "product_name": "collagen 1000mg",
     "brand": "innovit",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -1183,7 +1703,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "6111056013167",
+    "gtin": "",
     "product_name": "Cadum",
     "brand": "Colgate-Palmolive Maroc",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -1196,7 +1716,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "8711568058717",
+    "gtin": "",
     "product_name": "Dentifrice turmeric",
     "brand": "OPTISMILE NATURAL",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -1209,7 +1729,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "8711600804357",
+    "gtin": "",
     "product_name": "Dove pampering",
     "brand": "Unilever",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -1222,7 +1742,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "4015600810849",
+    "gtin": "",
     "product_name": "Power Rush",
     "brand": "Gillette",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -1235,7 +1755,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "3337875597357",
+    "gtin": "",
     "product_name": "CeraVe Schuimende Reinigingsgel",
     "brand": "CeraVe",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -1248,7 +1768,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "3600551020419",
+    "gtin": "",
     "product_name": "La Crème des peaux extra-sèches",
     "brand": "Mixa",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -1261,7 +1781,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "4005808801053",
+    "gtin": "",
     "product_name": "Nivea Creme",
     "brand": "Nivea",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -1274,7 +1794,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "3600551154985",
+    "gtin": "",
     "product_name": "deodorant",
     "brand": "Ushuaia",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -1287,7 +1807,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "4012273123009",
+    "gtin": "",
     "product_name": "Crème mains hydratante concentrée Formule Norvégienne",
     "brand": "Neutrogena",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -1300,7 +1820,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "8718836396359",
+    "gtin": "",
     "product_name": "Haïr and Nabil gummies",
     "brand": "Innovit",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -1313,7 +1833,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "20057060",
+    "gtin": "",
     "product_name": "Crème pour la peau Classic",
     "brand": "Cien",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -1326,7 +1846,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "3337875784054",
+    "gtin": "",
     "product_name": "Blemish control cleanser",
     "brand": "Cerave",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -1339,7 +1859,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "4005900755520",
+    "gtin": "",
     "product_name": "G",
     "brand": "F",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -1352,7 +1872,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "8690506473648",
+    "gtin": "",
     "product_name": "Emotion Kadın Deodorant Ocean Fresh",
     "brand": "Emotion",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -1365,7 +1885,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "3337871330262",
+    "gtin": "",
     "product_name": "Anti dandruff shampoo",
     "brand": "Dercos",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -1378,7 +1898,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "5410076652020",
+    "gtin": "",
     "product_name": "Maroc",
     "brand": "pantene",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -1391,7 +1911,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "3600551146263",
+    "gtin": "",
     "product_name": "deodorant",
     "brand": "français",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -1404,7 +1924,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "50064861",
+    "gtin": "",
     "product_name": "Vaseline lip therapy",
     "brand": "Vaseline",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -1417,7 +1937,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "6111024008874",
+    "gtin": "",
     "product_name": "BP3177",
     "brand": "TAOUS",
     "domain": "COSMETICS_PERSONAL_CARE",
@@ -1430,7 +1950,7 @@
     "collected_at": "2026-11-07"
   },
   {
-    "gtin": "8402001014123",
+    "gtin": "",
     "product_name": "Loción Corporal Hidrata",
     "brand": "Deliplus",
     "domain": "COSMETICS_PERSONAL_CARE",
