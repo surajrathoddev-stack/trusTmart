@@ -1,6 +1,4 @@
 // hardhat.config.js
-
-require("@nomicfoundation/hardhat-toolbox");
 require("dotenv").config();
 
 /** @type import('hardhat/config').HardhatUserConfig */
@@ -16,10 +14,19 @@ module.exports = {
   },
   networks: {
     hardhat: {
-      // Local test network — used by default for `npx hardhat test`
+      type: "edr-simulated",
+    },
+    besu: {
+      type: "http",
+      url: process.env.BESU_RPC_URL || "http://127.0.0.1:8545",
+      accounts: process.env.DEPLOYER_PRIVATE_KEY
+        ? [process.env.DEPLOYER_PRIVATE_KEY]
+        : [],
+      chainId: parseInt(process.env.BESU_CHAIN_ID || "1337", 10),
     },
     sepolia: {
-      url: process.env.SEPOLIA_RPC_URL || "",
+      type: "http",
+      url: process.env.SEPOLIA_RPC_URL || "https://rpc.sepolia.org",
       accounts: process.env.DEPLOYER_PRIVATE_KEY
         ? [process.env.DEPLOYER_PRIVATE_KEY]
         : [],
@@ -33,4 +40,3 @@ module.exports = {
     artifacts: "./artifacts",
   },
 };
-

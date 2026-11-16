@@ -1,0 +1,122 @@
+version: '3.8'
+
+# trusTmart Local Permissioned Consortium Network
+# 4 Validator Nodes running Hyperledger Besu with QBFT Consensus
+# Node 1 exposes JSON-RPC on port 8545 for the trusTmart Backend and MetaMask
+
+services:
+  validator1:
+    image: hyperledger/besu:24.1.0
+    container_name: trustmart-validator1
+    environment:
+      - BESU_LOGGING=INFO
+    volumes:
+      - ./genesis.json:/opt/besu/genesis.json:ro
+      - ./permissions_config.toml:/opt/besu/permissions_config.toml:ro
+      - validator1-data:/opt/besu/data
+    command:
+      - --data-path=/opt/besu/data
+      - --genesis-file=/opt/besu/genesis.json
+      - --permissions-nodes-config-file-enabled=true
+      - --permissions-nodes-config-file=/opt/besu/permissions_config.toml
+      - --permissions-accounts-config-file-enabled=true
+      - --permissions-accounts-config-file=/opt/besu/permissions_config.toml
+      - --rpc-http-enabled=true
+      - --rpc-http-host=0.0.0.0
+      - --rpc-http-port=8545
+      - --rpc-http-api=ETH,NET,QBFT,WEB3,PERM
+      - --rpc-http-cors-origins=*
+      - --host-allowlist=*
+      - --p2p-port=30303
+    ports:
+      - "8545:8545"
+      - "30303:30303"
+    networks:
+      trustmart-net:
+        ipv4_address: 172.20.0.2
+
+  validator2:
+    image: hyperledger/besu:24.1.0
+    container_name: trustmart-validator2
+    environment:
+      - BESU_LOGGING=INFO
+    volumes:
+      - ./genesis.json:/opt/besu/genesis.json:ro
+      - ./permissions_config.toml:/opt/besu/permissions_config.toml:ro
+      - validator2-data:/opt/besu/data
+    command:
+      - --data-path=/opt/besu/data
+      - --genesis-file=/opt/besu/genesis.json
+      - --permissions-nodes-config-file-enabled=true
+      - --permissions-nodes-config-file=/opt/besu/permissions_config.toml
+      - --permissions-accounts-config-file-enabled=true
+      - --permissions-accounts-config-file=/opt/besu/permissions_config.toml
+      - --p2p-port=30304
+      - --bootnodes=enode://6f8a80d14311c39f35f516fa664deaaaa13e85b2f7493f37f6144d86991ec012937307647bd3b9a82abe2974e1407241d54947bbb39763a4cac9f77166ad92a0@172.20.0.2:30303
+    ports:
+      - "30304:30304"
+    networks:
+      trustmart-net:
+        ipv4_address: 172.20.0.3
+
+  validator3:
+    image: hyperledger/besu:24.1.0
+    container_name: trustmart-validator3
+    environment:
+      - BESU_LOGGING=INFO
+    volumes:
+      - ./genesis.json:/opt/besu/genesis.json:ro
+      - ./permissions_config.toml:/opt/besu/permissions_config.toml:ro
+      - validator3-data:/opt/besu/data
+    command:
+      - --data-path=/opt/besu/data
+      - --genesis-file=/opt/besu/genesis.json
+      - --permissions-nodes-config-file-enabled=true
+      - --permissions-nodes-config-file=/opt/besu/permissions_config.toml
+      - --permissions-accounts-config-file-enabled=true
+      - --permissions-accounts-config-file=/opt/besu/permissions_config.toml
+      - --p2p-port=30305
+      - --bootnodes=enode://6f8a80d14311c39f35f516fa664deaaaa13e85b2f7493f37f6144d86991ec012937307647bd3b9a82abe2974e1407241d54947bbb39763a4cac9f77166ad92a0@172.20.0.2:30303
+    ports:
+      - "30305:30305"
+    networks:
+      trustmart-net:
+        ipv4_address: 172.20.0.4
+
+  validator4:
+    image: hyperledger/besu:24.1.0
+    container_name: trustmart-validator4
+    environment:
+      - BESU_LOGGING=INFO
+    volumes:
+      - ./genesis.json:/opt/besu/genesis.json:ro
+      - ./permissions_config.toml:/opt/besu/permissions_config.toml:ro
+      - validator4-data:/opt/besu/data
+    command:
+      - --data-path=/opt/besu/data
+      - --genesis-file=/opt/besu/genesis.json
+      - --permissions-nodes-config-file-enabled=true
+      - --permissions-nodes-config-file=/opt/besu/permissions_config.toml
+      - --permissions-accounts-config-file-enabled=true
+      - --permissions-accounts-config-file=/opt/besu/permissions_config.toml
+      - --p2p-port=30306
+      - --bootnodes=enode://6f8a80d14311c39f35f516fa664deaaaa13e85b2f7493f37f6144d86991ec012937307647bd3b9a82abe2974e1407241d54947bbb39763a4cac9f77166ad92a0@172.20.0.2:30303
+    ports:
+      - "30306:30306"
+    networks:
+      trustmart-net:
+        ipv4_address: 172.20.0.5
+
+volumes:
+  validator1-data:
+  validator2-data:
+  validator3-data:
+  validator4-data:
+
+networks:
+  trustmart-net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
+

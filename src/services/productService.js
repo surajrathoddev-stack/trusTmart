@@ -1,139 +1,265 @@
 // src/services/productService.js
-// Business logic for ProductMaster and ProductUnit management.
+// Business logic for ProductMaster (catalogue) and ProductUnit (physical units).
+// Aligned with Avika's schema (product_master, product_unit).
 
-const { v4: uuidv4 } = require('uuid');
 const db = require('../config/database');
 const { AppError } = require('../middleware/errorHandler');
 const { computeUnitHash } = require('../utils/hash');
 const { generateQR } = require('../utils/qr');
 const blockchainService = require('./blockchainService');
+const env = require('../config/env');
+
+const VALID_DOMAINS = [
+  'ELECTRONICS',
+  'APPAREL_FASHION',
+  'COSMETICS_PERSONAL_CARE',
+  'AUTOMOTIVE_INDUSTRIAL',
+  'PHARMACEUTICALS',
+  'FMCG_FOOD_BEVERAGE',
+];
 
 /**
- * Create a catalogue-level product (ProductMaster).
+ * Create a catalogue-level product in product_master.
  */
-async function createProduct({ name, brand, category, gtin, barcode, description, manufacturerId }) {
-  const result = await db.query(
-    `INSERT INTO product_master (name, brand, category, gtin, barcode, description, manufacturer_id)
-     VALUES ($1, $2, $3, $4, $5, $6, $7)
-     RETURNING *`,
-    [name, brand || null, category || null, gtin || null, barcode || null, description || null, manufacturerId]
-  );
-  return result.rows[0];
-}
-
-/**
- * Get all products, optionally filtered by manufacturer.
- */
-async function getProducts(manufacturerId) {
-  let sql = 'SELECT * FROM product_master';
-  const params = [];
-  if (manufacturerId) {
-    params.push(manufacturerId);
-    sql += ' WHERE manufacturer_id = $1';
+async function createProduct({ name, productName, brand, category, domain, gtin, description, manufacturerId }) {
+  const finalName = productName || name;
+  if (!finalName) {
+    throw new AppError('Product name is required', 400);
   }
-  sql += ' ORDER BY created_at DESC';
-  const result = await db.query(sql, params);
-  return result.rows;
+
+  // Validate or default domain to a permitted enum
+  let finalDomain = (domain || category || 'ELECTRONICS').toUpperCase().replace(/[\s-]/g, '_');
+  if (!VALID_DOMAINS.includes(finalDomain)) {
+    finalDomain = 'ELECTRONICS';
+  }
+
+  const result = await db.query(
+    `INSERT INTO product_master (product_name, brand, domain, gtin, description, source_name, source_record_id)
+     VALUES ($1, $2, $3, $4, $5, 'MANUFACTURER', $6)
+     RETURNING *`,
+    [finalName, brand || 'Generic', finalDomain, gtin || null, description || null, manufacturerId ? String(manufacturerId) : '1']
+  );
+
+  const row = result.rows[0];
+  return {
+    id: row.product_id,
+    product_id: row.product_id,
+    name: row.product_name,
+    product_name: row.product_name,
+    brand: row.brand,
+    domain: row.domain,
+    category: row.domain,
+    gtin: row.gtin,
+    description: row.description,
+    created_at: row.created_at,
+  };
 }
 
 /**
- * Get a single product by ID.
+ * Get all products.
+ */
+async function getProducts() {
+  const result = await db.query('SELECT * FROM product_master ORDER BY created_at DESC');
+  return result.rows.map((row) => ({
+    id: row.product_id,
+    product_id: row.product_id,
+    name: row.product_name,
+    product_name: row.product_name,
+    brand: row.brand,
+    domain: row.domain,
+    category: row.domain,
+    gtin: row.gtin,
+    description: row.description,
+    created_at: row.created_at,
+  }));
+}
+
+/**
+ * Get single product by ID.
  */
 async function getProductById(id) {
-  const result = await db.query('SELECT * FROM product_master WHERE id = $1', [id]);
+  const numericId = parseInt(id, 10);
+  const result = await db.query('SELECT * FROM product_master WHERE product_id = $1', [numericId]);
   if (result.rows.length === 0) {
-    throw new AppError('Product not found', 404);
+    throw new AppError('Product not found in catalogue', 404);
   }
-  return result.rows[0];
+  const row = result.rows[0];
+  return {
+    id: row.product_id,
+    product_id: row.product_id,
+    name: row.product_name,
+    product_name: row.product_name,
+    brand: row.brand,
+    domain: row.domain,
+    category: row.domain,
+    gtin: row.gtin,
+    description: row.description,
+    created_at: row.created_at,
+  };
 }
 
 /**
- * Register a physical ProductUnit linked to an existing ProductMaster.
- * Computes SHA-256 hash, anchors on-chain, generates QR code.
+ * Register a physical unit linked to a ProductMaster record.
+ * Computes deterministic SHA-256 hash, anchors on-chain, generates QR code.
  */
-async function registerUnit({ productId, serialNumber, batchNumber, manufactureDate, expiryDate, location, registeredBy }) {
-  // Verify the product exists
+async function registerUnit({ productId, serialNumber, batchNumber, location, registeredBy }) {
   const product = await getProductById(productId);
 
-  // Build the detail payload for hashing
+  const cleanSerial = serialNumber || `SN-${Date.now()}-${Math.floor(Math.random() * 1000)}`;
+
+  // Deterministic fingerprint
   const detailPayload = {
-    productId,
-    productName: product.name,
-    serialNumber: serialNumber || '',
-    batchNumber: batchNumber || '',
-    manufactureDate: manufactureDate || '',
-    registeredBy,
-    timestamp: new Date().toISOString(),
+    productId: String(product.product_id),
+    productName: product.product_name,
+    brand: product.brand,
+    serialNumber: cleanSerial,
+    batchNumber: batchNumber || 'BATCH-001',
+    manufacturerUserId: String(registeredBy),
   };
+  const dataHash = computeUnitHash(detailPayload);
 
-  const detailHash = computeUnitHash(detailPayload);
-
-  // Register on-chain (will gracefully degrade if blockchain is not configured)
+  // Anchor on-chain
   let onChainTx = null;
   try {
-    const txResult = await blockchainService.registerUnitOnChain(detailHash);
-    onChainTx = txResult?.txHash || null;
+    const txResult = await blockchainService.registerUnitOnChain(dataHash);
+    if (txResult) {
+      onChainTx = txResult.txHash;
+    }
   } catch (err) {
-    console.warn('Blockchain registration skipped or failed:', err.message);
-    // Continue — off-chain record is still created. Tx can be retried later.
+    console.warn('Blockchain registration skipped/failed:', err.message);
   }
 
-  // Insert the unit
+  // Insert physical unit into product_unit
   const result = await db.query(
-    `INSERT INTO product_units (product_id, serial_number, batch_number, manufacture_date, expiry_date,
-     detail_hash, status, current_location, registered_by, on_chain_tx)
-     VALUES ($1, $2, $3, $4, $5, $6, 'registered', $7, $8, $9)
+    `INSERT INTO product_unit (product_id, serial_number, batch_number, manufacturer_user_id,
+     data_hash, current_status, current_location, is_sold, on_chain_tx)
+     VALUES ($1, $2, $3, $4, $5, 'REGISTERED', $6, FALSE, $7)
      RETURNING *`,
-    [productId, serialNumber || null, batchNumber || null, manufactureDate || null, expiryDate || null,
-     detailHash, location || null, registeredBy, onChainTx]
+    [
+      product.product_id,
+      cleanSerial,
+      batchNumber || null,
+      registeredBy ? parseInt(registeredBy, 10) : null,
+      dataHash,
+      location || 'Manufacturing Facility',
+      onChainTx,
+    ]
   );
 
   const unit = result.rows[0];
 
-  // Generate QR code
-  const qrPayload = await generateQR(unit.id);
-  await db.query('UPDATE product_units SET qr_payload = $1 WHERE id = $2', [qrPayload, unit.id]);
+  // Generate QR code data URI
+  const qrPayload = await generateQR(unit.unit_id);
+  await db.query('UPDATE product_unit SET qr_payload = $1 WHERE unit_id = $2', [qrPayload, unit.unit_id]);
   unit.qr_payload = qrPayload;
 
-  // Record the chain transaction if we got one
+  // Insert chain transaction record if available
   if (onChainTx) {
-    await db.query(
-      `INSERT INTO chain_transactions (tx_hash, status, unit_id, from_address)
-       VALUES ($1, 'pending', $2, $3)`,
-      [onChainTx, unit.id, null]
-    );
+    try {
+      await db.query(
+        `INSERT INTO chain_transactions (unit_id, tx_hash, network, tx_status)
+         VALUES ($1, $2, $3, 'CONFIRMED')
+         ON CONFLICT (tx_hash) DO NOTHING`,
+        [unit.unit_id, onChainTx, env.BLOCKCHAIN_NETWORK]
+      );
+    } catch (e) {
+      console.warn('Could not record chain_transaction:', e.message);
+    }
   }
 
-  return unit;
+  return {
+    id: unit.unit_id,
+    unit_id: unit.unit_id,
+    product_id: unit.product_id,
+    serial_number: unit.serial_number,
+    batch_number: unit.batch_number,
+    detail_hash: unit.data_hash,
+    data_hash: unit.data_hash,
+    status: unit.current_status,
+    current_status: unit.current_status,
+    current_location: unit.current_location,
+    is_sold: unit.is_sold,
+    qr_payload: unit.qr_payload,
+    on_chain_tx: unit.on_chain_tx,
+    created_at: unit.created_at,
+  };
 }
 
 /**
- * Get a unit by ID, including its parent product details.
+ * Get physical unit by UUID.
  */
 async function getUnitById(unitId) {
   const result = await db.query(
-    `SELECT u.*, pm.name as product_name, pm.brand, pm.category, pm.gtin, pm.barcode
-     FROM product_units u
-     JOIN product_master pm ON u.product_id = pm.id
-     WHERE u.id = $1`,
+    `SELECT u.*, pm.product_name, pm.brand, pm.domain, pm.gtin, pm.description
+     FROM product_unit u
+     JOIN product_master pm ON u.product_id = pm.product_id
+     WHERE u.unit_id = $1`,
     [unitId]
   );
+
   if (result.rows.length === 0) {
     throw new AppError('Product unit not found', 404);
   }
-  return result.rows[0];
+
+  const row = result.rows[0];
+  return {
+    id: row.unit_id,
+    unit_id: row.unit_id,
+    product_id: row.product_id,
+    product_name: row.product_name,
+    productName: row.product_name,
+    brand: row.brand,
+    domain: row.domain,
+    category: row.domain,
+    gtin: row.gtin,
+    serial_number: row.serial_number,
+    serialNumber: row.serial_number,
+    batch_number: row.batch_number,
+    batchNumber: row.batch_number,
+    detail_hash: row.data_hash,
+    data_hash: row.data_hash,
+    status: row.current_status,
+    current_status: row.current_status,
+    current_location: row.current_location,
+    is_sold: row.is_sold,
+    on_chain_tx: row.on_chain_tx,
+    qr_payload: row.qr_payload,
+    registered_by: row.manufacturer_user_id,
+    created_at: row.created_at,
+  };
 }
 
 /**
- * Get all units for a product.
+ * Get all units under a product.
  */
 async function getUnitsByProduct(productId) {
+  const numericId = parseInt(productId, 10);
   const result = await db.query(
-    'SELECT * FROM product_units WHERE product_id = $1 ORDER BY created_at DESC',
-    [productId]
+    'SELECT * FROM product_unit WHERE product_id = $1 ORDER BY created_at DESC',
+    [numericId]
   );
-  return result.rows;
+  return result.rows.map((row) => ({
+    id: row.unit_id,
+    unit_id: row.unit_id,
+    product_id: row.product_id,
+    serial_number: row.serial_number,
+    batch_number: row.batch_number,
+    detail_hash: row.data_hash,
+    data_hash: row.data_hash,
+    status: row.current_status,
+    current_status: row.current_status,
+    current_location: row.current_location,
+    is_sold: row.is_sold,
+    on_chain_tx: row.on_chain_tx,
+    created_at: row.created_at,
+  }));
 }
 
-module.exports = { createProduct, getProducts, getProductById, registerUnit, getUnitById, getUnitsByProduct };
-
+module.exports = {
+  createProduct,
+  getProducts,
+  getProductById,
+  registerUnit,
+  getUnitById,
+  getUnitsByProduct,
+};

@@ -3,9 +3,10 @@ pragma solidity ^0.8.19;
 
 /**
  * @title TrusTmart
- * @notice Decentralized product authentication using blockchain-anchored SHA-256 hashes.
+ * @notice Permissioned product trust, seller verification, and supply-chain traceability contract.
  * @dev Implements role-based access control for Admin, Manufacturer, Supplier, Retailer, and Consumer.
- *      Keeps on-chain data minimal (hashes + essential event data); bulk data stays off-chain.
+ *      Keeps on-chain data minimal (hashes + essential audit state); bulk data remains off-chain in PostgreSQL.
+ *      Compatible with Hyperledger Besu QBFT and Ethereum EVM networks.
  */
 contract TrusTmart {
     // ────────────────────────── Roles ──────────────────────────
@@ -13,7 +14,7 @@ contract TrusTmart {
 
     // ─────────────────────── Data Structures ───────────────────
     struct Unit {
-        bytes32 detailHash;     // SHA-256 hash of the unit's details
+        bytes32 detailHash;     // SHA-256 hash of the unit's off-chain details
         uint256 timestamp;      // Registration timestamp
         bool isRegistered;
         bool isSold;
@@ -23,24 +24,42 @@ contract TrusTmart {
 
     struct ChainEvent {
         bytes32 unitHash;       // The unit this event belongs to
-        string eventType;       // e.g. "custody_transfer", "location_update", "status_change", "sold"
+        string eventType;       // e.g. "REGISTERED", "TRANSFERRED", "RECEIVED", "LOCATION_UPDATE", "SOLD"
         bytes32 newHash;        // Recalculated hash after the event
         address actor;          // Who performed the action
         uint256 timestamp;
+    }
+
+    struct SellerVerification {
+        uint256 sellerId;
+        bytes32 evidenceHash;       // Cryptographic hash of seller evidence bundle
+        string verificationStatus; // "AUTHENTIC", "SUSPICIOUS", "UNVERIFIED"
+        uint256 timestamp;
+        address reviewer;
+        bool exists;
     }
 
     // ───────────────────────── State ──────────────────────────
     address public owner;
 
     mapping(address => Role) public roles;
-    mapping(bytes32 => Unit) public units;            // detailHash => Unit
-    mapping(bytes32 => ChainEvent[]) public events;   // unitHash => events
+    mapping(bytes32 => Unit) public units;                             // detailHash => Unit
+    mapping(bytes32 => ChainEvent[]) public events;                    // unitHash => events
+    mapping(uint256 => SellerVerification) public latestSellerVerifications; // sellerId => latest verification
+    mapping(uint256 => SellerVerification[]) public sellerVerificationHistory; // sellerId => all verifications
 
     // ───────────────────────── Events ─────────────────────────
     event RoleAssigned(address indexed account, Role role);
     event UnitRegistered(bytes32 indexed detailHash, address indexed manufacturer, uint256 timestamp);
     event EventRecorded(bytes32 indexed unitHash, string eventType, bytes32 newHash, address indexed actor, uint256 timestamp);
     event UnitSold(bytes32 indexed unitHash, address indexed retailer, uint256 timestamp);
+    event SellerVerificationRecorded(
+        uint256 indexed sellerId,
+        bytes32 indexed evidenceHash,
+        string verificationStatus,
+        address indexed reviewer,
+        uint256 timestamp
+    );
 
     // ──────────────────────── Modifiers ───────────────────────
     modifier onlyOwner() {
@@ -76,6 +95,43 @@ contract TrusTmart {
         require(_account != address(0), "Invalid address");
         roles[_account] = _role;
         emit RoleAssigned(_account, _role);
+    }
+
+    // ──────────────── Seller Verification Functions ───────────
+
+    /**
+     * @notice Record a seller verification assessment on-chain. Admin-only.
+     * @param _sellerId           Off-chain seller ID.
+     * @param _evidenceHash       Cryptographic SHA-256 hash of the evidence & assessment bundle.
+     * @param _verificationStatus Assessment status (AUTHENTIC, SUSPICIOUS, UNVERIFIED).
+     */
+    function recordSellerVerification(
+        uint256 _sellerId,
+        bytes32 _evidenceHash,
+        string calldata _verificationStatus
+    ) external onlyRole(Role.Admin) {
+        require(_sellerId > 0, "Invalid seller ID");
+        require(_evidenceHash != bytes32(0), "Invalid evidence hash");
+
+        SellerVerification memory v = SellerVerification({
+            sellerId: _sellerId,
+            evidenceHash: _evidenceHash,
+            verificationStatus: _verificationStatus,
+            timestamp: block.timestamp,
+            reviewer: msg.sender,
+            exists: true
+        });
+
+        latestSellerVerifications[_sellerId] = v;
+        sellerVerificationHistory[_sellerId].push(v);
+
+        emit SellerVerificationRecorded(
+            _sellerId,
+            _evidenceHash,
+            _verificationStatus,
+            msg.sender,
+            block.timestamp
+        );
     }
 
     // ──────────────── Manufacturer Functions ──────────────────
@@ -185,10 +241,45 @@ contract TrusTmart {
     }
 
     /**
+     * @notice Get latest seller verification details.
+     * @param _sellerId  Off-chain seller ID.
+     */
+    function getSellerVerification(uint256 _sellerId) external view returns (
+        bytes32 evidenceHash,
+        string memory verificationStatus,
+        uint256 timestamp,
+        address reviewer,
+        bool exists
+    ) {
+        SellerVerification storage v = latestSellerVerifications[_sellerId];
+        return (v.evidenceHash, v.verificationStatus, v.timestamp, v.reviewer, v.exists);
+    }
+
+    /**
+     * @notice Get count of historical verification assessments for a seller.
+     */
+    function getSellerVerificationCount(uint256 _sellerId) external view returns (uint256) {
+        return sellerVerificationHistory[_sellerId].length;
+    }
+
+    /**
+     * @notice Get specific seller verification assessment by index.
+     */
+    function getSellerVerificationByIndex(uint256 _sellerId, uint256 _index) external view returns (
+        bytes32 evidenceHash,
+        string memory verificationStatus,
+        uint256 timestamp,
+        address reviewer
+    ) {
+        require(_index < sellerVerificationHistory[_sellerId].length, "Index out of bounds");
+        SellerVerification storage v = sellerVerificationHistory[_sellerId][_index];
+        return (v.evidenceHash, v.verificationStatus, v.timestamp, v.reviewer);
+    }
+
+    /**
      * @notice Check if an address has a specific role.
      */
     function hasRole(address _account, Role _role) external view returns (bool) {
         return roles[_account] == _role;
     }
 }
-

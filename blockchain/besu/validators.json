@@ -1,0 +1,42 @@
+{
+  "network": "trusTmart-besu-qbft",
+  "chainId": 1337,
+  "consensus": "QBFT",
+  "blockPeriodSeconds": 2,
+  "validators": [
+    {
+      "node": "node1",
+      "address": "0x9e246e7f2255e24b4f593b4695b2875b28d71221",
+      "p2pPort": 30303,
+      "rpcPort": 8545,
+      "description": "Validator Node 1 (Core Consortium Operator / trusTmart Admin)"
+    },
+    {
+      "node": "node2",
+      "address": "0x4b7f7e27ddb3a568b209d20c572a9e3381e4b85c",
+      "p2pPort": 30304,
+      "rpcPort": 8546,
+      "description": "Validator Node 2 (Manufacturer Consortium Partner)"
+    },
+    {
+      "node": "node3",
+      "address": "0xd3a129d2b27131713d31b315d18e8d2e8b233a75",
+      "p2pPort": 30305,
+      "rpcPort": 8547,
+      "description": "Validator Node 3 (Logistics / Supply Chain Auditing Partner)"
+    },
+    {
+      "node": "node4",
+      "address": "0xb81816e8140be0458df20a1eb9e84d4b1a8f94d9",
+      "p2pPort": 30306,
+      "rpcPort": 8548,
+      "description": "Validator Node 4 (Independent Regulatory / Consumer Advocate Node)"
+    }
+  ],
+  "defaultDeployer": {
+    "address": "0xfe3b557e8fb62b89f4916b721be55ceb828dbd73",
+    "privateKey": "0x8f2a55949038a9610f50fb23b5883af3b4ecb3c3bb792cbcefbd1542c694be66",
+    "description": "Pre-funded Genesis account for contract deployment and administrative setup"
+  }
+}
+
