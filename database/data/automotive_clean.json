@@ -492,5 +492,83 @@
     "source_url": "https://motul.com/en-AU/products/27400",
     "source_record_id": "112864",
     "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "3374650293110",
+    "product_name": "MOTUL DOT 4 LV",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "Low viscosity brake fluid for hydraulic brake and clutch systems of vehicles with ABS and ESP, 0.5L pack",
+    "model_part_number": "109434",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-AU/products/27302",
+    "source_record_id": "109434",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "3374650235011",
+    "product_name": "MOTUL RBF 660 FACTORY LINE",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "Non-silicone synthetic racing brake fluid for hydraulic brake and clutch systems, 0.5L pack",
+    "model_part_number": "101666",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-IS/products/48200",
+    "source_record_id": "101666",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "3374650293240",
+    "product_name": "MOTUL RBF 700",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "High-performance racing brake fluid for consistent braking, 0.5L pack",
+    "model_part_number": "109452",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-IS/products/48201",
+    "source_record_id": "109452",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "3374650339900",
+    "product_name": "MOTUL 8100 X-CLEAN+ EFE 0W-30",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "100% synthetic engine oil for latest generation diesel and gasoline engines, SAE 0W-30, ACEA C3",
+    "model_part_number": "111657",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-AE/products/17724",
+    "source_record_id": "111657",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "3374650256535",
+    "product_name": "MOTUL 8100 X-POWER 10W-60",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "100% synthetic engine oil for high performance cars, SAE 10W-60, ACEA A3/B4, API SP",
+    "model_part_number": "106142",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-AE/products/17950",
+    "source_record_id": "106142",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "3374650413327",
+    "product_name": "MOTUL E DOT 5.1",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "100% synthetic glycol ether brake fluid for hydraulic brake systems, 0.5L pack",
+    "model_part_number": "113121",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-AU/products/27410",
+    "source_record_id": "113121",
+    "collected_at": "2026-11-16"
   }
 ]
