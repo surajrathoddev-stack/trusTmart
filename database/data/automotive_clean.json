@@ -570,5 +570,57 @@
     "source_url": "https://www.motul.com/en-AU/products/27410",
     "source_record_id": "113121",
     "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "3374650257693",
+    "product_name": "MOTUL SPECIFIC 504 00 507 00 5W-30",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "100% synthetic engine oil for recent VAG Group cars with Euro 4, 5 and 6 engines, SAE 5W-30, ACEA C3, VW 504 00 507 00",
+    "model_part_number": "106374",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-AE/products/59100",
+    "source_record_id": "106374",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "3374650287072",
+    "product_name": "MOTUL 8100 ECO-CLEAN 0W-20",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "100% synthetic fuel economy engine oil, SAE 0W-20, ACEA C5 and C6, API SQ, ILSAC GF-7A",
+    "model_part_number": "108813",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-AE/products/17011",
+    "source_record_id": "108813",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "3374650284897",
+    "product_name": "MOTUL IRIX TECH 300",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "High performance multipurpose grease for roller bearings, plain bearings and thrust bearings, 0.4kg pack",
+    "model_part_number": "108664",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-AU/products/69001",
+    "source_record_id": "108664",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "3374650240695",
+    "product_name": "MOTUL MULTI ATF",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "100% synthetic high performance fluid for modern automatic transmissions, pack sizes 1L and 20L",
+    "model_part_number": "105784",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-AE/products/45600",
+    "source_record_id": "105784",
+    "collected_at": "2026-11-16"
   }
 ]
