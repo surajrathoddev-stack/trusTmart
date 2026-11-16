@@ -414,5 +414,83 @@
     "source_url": "https://www.motul.com/en-ZA/products/17603",
     "source_record_id": "109774",
     "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "",
+    "product_name": "MOTUL DOT 4",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "Brake fluid for hydraulic brake and clutch systems meeting DOT 4 recommendations, pack sizes 0.2L, 0.5L and 1L",
+    "model_part_number": "112833",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (motul.com)",
+    "source_url": "https://motul.com/en-AU/products/27300",
+    "source_record_id": "112833",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "3374650237312",
+    "product_name": "MOTUL DOT 3&4",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "Fully synthetic brake fluid for hydraulic brake and clutch systems requiring DOT 4 or DOT 3 fluid",
+    "model_part_number": "102718",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (motul.com)",
+    "source_url": "https://motul.com/en-EE/products/27250",
+    "source_record_id": "102718",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "3374650005027",
+    "product_name": "MOTUL RBF 600 FACTORY LINE",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "Non-silicone synthetic brake fluid for hydraulic brake and clutch systems, racing use, 0.5L pack",
+    "model_part_number": "100948",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (motul.com)",
+    "source_url": "https://motul.com/en-IS/products/48100",
+    "source_record_id": "100948",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "3374650296500",
+    "product_name": "MOTUL 8100 X-CLEAN GEN2 5W-40",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "100% synthetic engine oil approved by many car makers for latest generation engines, SAE 5W-40, ACEA C3, API SP",
+    "model_part_number": "109761",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-AE/products/17702",
+    "source_record_id": "109761",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "3374650237930",
+    "product_name": "MOTUL 8100 X-CLEAN 5W-40",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "100% synthetic engine oil approved by many car makers for latest generation engines, SAE 5W-40, ACEA C3, API SN",
+    "model_part_number": "102786",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-AE/products/17700",
+    "source_record_id": "102786",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "3374650402079",
+    "product_name": "MOTUL DOT 5.1",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "Brake fluid for hydraulic brake and clutch systems requiring DOT 3, DOT 4 or DOT 5.1 fluid, pack sizes 0.5L, 1L and 5L",
+    "model_part_number": "112864",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (motul.com)",
+    "source_url": "https://motul.com/en-AU/products/27400",
+    "source_record_id": "112864",
+    "collected_at": "2026-11-16"
   }
 ]
