@@ -8,7 +8,7 @@ Collection date: 2026-11-09. All records come from public sources. No barcode wa
 |---|---|---|---|---|---|
 | Cosmetics and Personal Care | Open Beauty Facts API v2 | https://world.openbeautyfacts.org | barcode (code) | 2026-11-07 | Open Database License (ODbL), contents under Database Contents License. Check the site's terms page before reuse and credit the source. |
 | Automotive and Industrial Parts | Open Products Facts search | https://world.openproductsfacts.org | barcode (code) | 2026-11-09 | Same family and licence as above. Check the terms page before reuse. |
-| Automotive and Industrial Parts | Official manufacturer websites (manual rows) | per-row source_url | model/part number | 2026-11-10 | Facts only (name, part number, printed EAN). Each row keeps its own page link. 3 rows accepted (NGK 1, Motul 2). |
+| Automotive and Industrial Parts | Official manufacturer websites (manual rows) | per-row source_url | model/part number | 2026-11-10 to 2026-11-16 | Facts only (name, part number, printed EAN). Each row keeps its own page link. 43 rows accepted (NGK 1, Motul 42). The Motul rows come from official motul.com product pages of several country sites (en-ZA, en-AU, en-AE, en-EE, en-IS). Retailer pages are not used. |
 
 UPCitemdb trial search was tried for Automotive and returned no results for the test query, so no records come from it.
 
@@ -17,7 +17,7 @@ UPCitemdb trial search was tried for Automotive and returned no results for the 
 | Domain | Accepted | Rejected | Notes |
 |---|---|---|---|
 | Cosmetics and Personal Care | 100 | 165 | 135 valid records were available. Only the first 100 were kept (upper limit of the task). 35 valid records were not used. |
-| Automotive and Industrial Parts | 11 | 122 | Target is 50. Short by 39. 8 from Open Products Facts and 3 from official manufacturer sites (NGK 1, Motul 2). |
+| Automotive and Industrial Parts | 51 | 122 | Target of 50 reached. 8 from Open Products Facts and 43 from official manufacturer sites (NGK 1, Motul 42). |
 | Electronics | pending | - | To be supplied by Utkarsh. |
 | Apparel and Fashion | pending | - | To be supplied by Utkarsh. |
 | Pharmaceuticals | pending | - | To be supplied by Ruchita. |
@@ -35,7 +35,7 @@ Full lists with the reason for each row: database/data/cosmetics_rejected.csv an
 
 ## Known gaps
 
-- Open Products Facts has few real automotive items, so Automotive is below target.
+- Open Products Facts has few real automotive items, so 43 of the 51 Automotive records were collected by hand from official manufacturer pages. 42 of them are Motul, so this domain is mostly one brand. Official sites that show a part number and a barcode for each product are rare.
 - Electronics, Apparel, Pharmaceuticals and FMCG files had not been received when this was written.
 - Descriptions come from category and quantity fields in the source and are short.
 
@@ -51,3 +51,5 @@ Both sources were rechecked on 11 Nov 2026 on the Open Beauty Facts website and 
 Our use: this is a college project. Cosmetics rows come from Open Beauty Facts and Automotive rows from Open Products Facts. Credit line: "Open Beauty Facts / Open Products Facts contributors (ODbL)".
 
 Rows collected from official brand websites are not from these databases. Their source URLs are kept in the table above and in the raw data files.
+
+Official manufacturer pages (Motul, NGK): only facts are taken (product name, part number, printed barcode, a short description written in our own words), and each row keeps the link to its source page. No text, images or documents are copied. These pages are not ODbL data.
