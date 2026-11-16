@@ -622,5 +622,44 @@
     "source_url": "https://www.motul.com/en-AE/products/45600",
     "source_record_id": "105784",
     "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "3374650240657",
+    "product_name": "MOTUL ATF VI",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "100% synthetic high performance low viscosity fluid for modern automatic transmissions, pack sizes 1L, 20L and 208L",
+    "model_part_number": "105774",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-AE/products/19280",
+    "source_record_id": "105774",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "3374650271255",
+    "product_name": "MOTUL ATF HD",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "Fully synthetic fluid for heavy duty automatic transmissions with long oil change intervals, 208L pack",
+    "model_part_number": "107908",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-AE/products/19277",
+    "source_record_id": "107908",
+    "collected_at": "2026-11-16"
+  },
+  {
+    "gtin": "3374650296579",
+    "product_name": "MOTUL TRANS ATF VI",
+    "brand": "MOTUL",
+    "domain": "AUTOMOTIVE_INDUSTRIAL",
+    "description": "100% synthetic high performance low viscosity fluid for modern automatic transmissions, pack sizes 1L, 20L and 208L",
+    "model_part_number": "109771",
+    "regulatory_id": "",
+    "source_name": "Official manufacturer website (www.motul.com)",
+    "source_url": "https://www.motul.com/en-AE/products/73851",
+    "source_record_id": "109771",
+    "collected_at": "2026-11-16"
   }
 ]
