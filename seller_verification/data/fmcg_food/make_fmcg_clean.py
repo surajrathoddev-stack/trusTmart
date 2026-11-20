@@ -47,6 +47,24 @@ with OUT.open("w", encoding="utf-8", newline="") as f:
     w = csv.DictWriter(f, fieldnames=HEADER)
     w.writeheader()
     w.writerows(rows)
+# Drop copies of the same product (same name and description) that have no barcode,
+# when a copy with a barcode exists.
+has_barcode = {}
+for row in rows:
+    key = (row["product_name"].lower(), row["description"].lower())
+    if row["gtin"]:
+        has_barcode[key] = True
+
+kept, removed = [], 0
+for row in rows:
+    key = (row["product_name"].lower(), row["description"].lower())
+    if not row["gtin"] and has_barcode.get(key):
+        removed += 1
+        print("removed:", row["product_name"], "|", row["description"])
+        continue
+    kept.append(row)
+rows = kept
+print(f"removed {removed} copies without a barcode")
 
 print(f"wrote {len(rows)} rows to {OUT.name}")
 print(f"barcodes failing check digit (left empty): {dropped}")
