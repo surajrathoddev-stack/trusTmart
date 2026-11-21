@@ -11,7 +11,7 @@ HEADER = ["gtin", "product_name", "brand", "domain", "description", "model_part_
           "regulatory_id", "source_name", "source_url", "source_record_id", "collected_at"]
 
 
-def gtin_check_ok(code: str) -> bool:
+def gtin_check_ok(code):
     if not code.isdigit() or len(code) not in (8, 12, 13, 14):
         return False
     body, check = code[:-1], int(code[-1])
@@ -26,7 +26,7 @@ with SRC.open(encoding="utf-8-sig", newline="") as f:
         if barcode and not gtin_check_ok(barcode):
             barcode, dropped = "", dropped + 1
         if barcode and barcode in seen_gtin:
-            barcode = ""
+            continue
         if barcode:
             seen_gtin.add(barcode)
         rows.append({
@@ -43,28 +43,26 @@ with SRC.open(encoding="utf-8-sig", newline="") as f:
             "collected_at": r["checked_on"].strip(),
         })
 
+# Copies: same name and description as an earlier row, with no barcode, are dropped
+has_barcode = {(r["product_name"].lower(), r["description"].lower()) for r in rows if r["gtin"]}
+kept = []
+for r in rows:
+    key = (r["product_name"].lower(), r["description"].lower())
+    if not r["gtin"] and key in has_barcode:
+        continue
+    kept.append(r)
+rows = kept
+
+# Write fresh, then read the file back to count what was actually saved
+OUT.unlink(missing_ok=True)
 with OUT.open("w", encoding="utf-8", newline="") as f:
     w = csv.DictWriter(f, fieldnames=HEADER)
     w.writeheader()
     w.writerows(rows)
-# Drop copies of the same product (same name and description) that have no barcode,
-# when a copy with a barcode exists.
-has_barcode = {}
-for row in rows:
-    key = (row["product_name"].lower(), row["description"].lower())
-    if row["gtin"]:
-        has_barcode[key] = True
 
-kept, removed = [], 0
-for row in rows:
-    key = (row["product_name"].lower(), row["description"].lower())
-    if not row["gtin"] and has_barcode.get(key):
-        removed += 1
-        print("removed:", row["product_name"], "|", row["description"])
-        continue
-    kept.append(row)
-rows = kept
-print(f"removed {removed} copies without a barcode")
+with OUT.open(encoding="utf-8") as f:
+    saved = sum(1 for _ in csv.DictReader(f))
 
-print(f"wrote {len(rows)} rows to {OUT.name}")
-print(f"barcodes failing check digit (left empty): {dropped}")
+print("file:", OUT)
+print("rows in memory:", len(rows), "| rows read back from file:", saved)
+print("barcodes failing check digit (left empty):", dropped)
