@@ -5,14 +5,21 @@ from fastapi import FastAPI
 from pydantic import BaseModel, ConfigDict, HttpUrl, field_validator
 
 from app.address_check import check_address
+from app.categories import required_registries
 from app.registry import ManualRegistryProvider, check_registry
 from app.scoring import score_assessment
 from app.website_check import check_website
 
 app = FastAPI(title="trusTmart Seller Verification")
 
-# Allowed outcomes for the optional product and provenance signals.
 SignalResult = Literal["passed", "failed", "could not be verified"]
+SellerCategory = Literal[
+    "FOOD_COMPANY",
+    "FOOD_PERSON_OR_PARTNERSHIP",
+    "PHARMACY_COMPANY",
+    "OTHER_COMPANY",
+    "OTHER_PERSON_OR_PARTNERSHIP",
+]
 
 
 class SellerAssessRequest(BaseModel):
@@ -23,7 +30,8 @@ class SellerAssessRequest(BaseModel):
     website: Optional[HttpUrl] = None
     registrationNumber: Optional[str] = None
     address: Optional[str] = None
-    # Optional signals from other modules. Missing means "could not be verified".
+    # Optional: when missing, the service keeps checking every registry as before.
+    sellerCategory: Optional[SellerCategory] = None
     productCheck: Optional[SignalResult] = None
     provenanceCompleteness: Optional[SignalResult] = None
 
@@ -53,6 +61,12 @@ def health():
 def assess_seller(request: SellerAssessRequest):
     checked_at = datetime.now(timezone.utc).isoformat()
 
+    # Decide which registries apply. With no category, every registry check runs as before.
+    if request.sellerCategory:
+        needs = required_registries(request.sellerCategory)
+    else:
+        needs = {"mca": True, "fssai": True}
+
     # No reviewer records are loaded yet, so the registry check cannot pass.
     registry_factor = check_registry(
         ManualRegistryProvider([]),
@@ -76,6 +90,8 @@ def assess_seller(request: SellerAssessRequest):
 
     return {
         "sellerId": None,
+        "sellerCategory": request.sellerCategory,
+        "registriesRequired": needs,
         "evidenceStatus": result["evidenceStatus"],
         "score": result["score"],
         "factors": seller_factors,
