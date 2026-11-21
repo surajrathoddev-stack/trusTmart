@@ -54,4 +54,5 @@ def test_missing_signals_are_shown_not_passed():
 
 def test_missing_signal_never_gives_a_score():
     body = post({"productCheck": "passed", "provenanceCompleteness": "passed"})
-    assert body["score"] is None or body["evidenceStatus"] == "VERIFIED"
+    assert body["evidenceStatus"] == "UNKNOWN"
+    assert body["score"] is None
